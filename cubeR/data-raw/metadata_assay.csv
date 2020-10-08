@@ -1,0 +1,19 @@
+element_id,element_label,instance_id,date_created,property_value
+85,Assay,37,2020-07-31 17:11:26.12+00,Genotyping Arrays
+85,Assay,37,2020-07-31 17:11:26.12+00,In vitro assays
+85,Assay,38,2020-07-31 17:11:32.181+00,Bulk RNA-Seq
+85,Assay,38,2020-07-31 17:11:32.181+00,In vitro assays
+85,Assay,39,2020-07-31 17:14:57.686+00,In vitro assays
+85,Assay,39,2020-07-31 17:14:57.686+00,Bulk ATAC-Seq
+85,Assay,40,2020-07-31 17:14:59.054+00,In vivo assays
+85,Assay,40,2020-07-31 17:14:59.054+00,Body Weight
+85,Assay,41,2020-07-31 17:15:00.494+00,In vivo assays
+85,Assay,41,2020-07-31 17:15:00.494+00,Food Intake
+85,Assay,42,2020-07-31 17:15:01.658+00,In vivo assays
+85,Assay,42,2020-07-31 17:15:01.658+00,7 Day Indirect Caliometry
+85,Assay,43,2020-07-31 17:15:03.097+00,In vivo assays
+85,Assay,43,2020-07-31 17:15:03.097+00,Glucose Tolerance Test
+85,Assay,44,2020-07-31 17:15:04.944+00,In vivo assays
+85,Assay,44,2020-07-31 17:15:04.944+00,NMR
+85,Assay,52,2020-08-06 14:38:09.377+00,Demo Assay
+85,Assay,52,2020-08-06 14:38:09.377+00,In Vitro
