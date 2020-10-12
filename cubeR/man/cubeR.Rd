@@ -4,15 +4,17 @@
 \alias{cubeR}
 \title{A CubeR Function}
 \usage{
-cubeR(dataset_id = "jaxda00234")
+cubeR(dataset = "Assay", accession_ids = "JAXAS00005")
 }
 \arguments{
-\item{dataset_id}{dataset to access.}
+\item{dataset}{dataset to access.}
+
+\item{accession_ids}{accession_ids to access.}
 }
 \description{
 This is basic function to retrieve cube data
 }
 \examples{
-cubeR("jaxda00234")
+cubeR("Assay", "JAXAS00005")
 }
 \keyword{cubeR}
