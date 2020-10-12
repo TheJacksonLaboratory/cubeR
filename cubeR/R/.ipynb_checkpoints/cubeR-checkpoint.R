@@ -8,5 +8,6 @@
 #' cubeR("jaxda00234")
 cubeR <- function(dataset_id="jaxda00234"){
     print( paste("dataset: ", dataset_id) )
-    return (metadata_assay)
+    return (assay)
+    
 }

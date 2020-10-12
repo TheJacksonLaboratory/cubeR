@@ -1,5 +1,5 @@
 # Load raw data from .csv file
-metadata_assay <- read.csv("data-raw/metadata_assay.csv")
+assay <- read.csv("data-raw/assay.csv")
 # Apply preprocessing...
 # Save the cleaned data in the required R package location
-usethis::use_data(metadata_assay)
+usethis::use_data(assay)

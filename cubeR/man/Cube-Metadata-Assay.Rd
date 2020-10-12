@@ -3,20 +3,20 @@
 \docType{data}
 \name{Cube Metadata Assay}
 \alias{Cube Metadata Assay}
-\alias{metadata_assay}
+\alias{assay}
 \title{Cube Metadata Assay}
 \format{
-A assay metadata with 18 rows and 5 variables:
+A assay metadata with 5 variables:
 \describe{
-\item{element_id}{assay id}
-\item{element_label}{name of assay}
-\item{instance_id}{assay instance id}
-\item{date_created}{date created}
-\item{property value}{assay property value}
+\item{accession_id}{accession id}
+\item{subclass}{Sub class}
+\item{target}{Target}
+\item{seqclass}{Seq class}
+\item{short}{Short}
 }
 }
 \usage{
-metadata_assay
+assay
 }
 \description{
 Metadata information for assay

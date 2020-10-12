@@ -3,6 +3,8 @@
 #' This is echo function to test installation.
 #' @param message
 #' @keywords Hello
+#' @name Hello 
+#' @description Hello world
 #' @export
 #' @examples
 #' hello()

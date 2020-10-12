@@ -4,17 +4,60 @@
 #'
 #' @description Metadata information for assay
 #'
-#' @format A assay metadata with 18 rows and 5 variables:
+#' @format A assay metadata with 5 variables:
 #' \describe{
-#'   \item{element_id}{assay id}
-#'   \item{element_label}{name of assay}
-#'   \item{instance_id}{assay instance id}
-#'   \item{date_created}{date created}
-#'   \item{property value}{assay property value}
+#'   \item{accession_id}{accession id}
+#'   \item{subclass}{Sub class}
+#'   \item{target}{Target}
+#'   \item{seqclass}{Seq class}
+#'   \item{short}{Short}
 #' }
-"metadata_assay"
+"assay"
 
-#' @source <https://www.github.com/TheJacksonLaboratory/cube_r>
+#' @title Cube Metadata Disease 
+#'
+#' @name Cube Metadata Disease
+#'
+#' @description Metadata information for Disease
+#'
+#' @format A Disease metadata with 3 variables:
+#' \describe{
+#'   \item{accession_id}{accession id}
+#'   \item{hpo_disease_id}{HPO Disease Id }
+#'   \item{hpo_disease_term}{HPO Disease Term}
+#' }
+"disease"
+
+#' @title Cube Metadata Drug_Treatment 
+#'
+#' @name Cube Metadata Drug_Treatment
+#'
+#' @description Metadata information for Drug_Treatment
+#'
+#' @format A Disease metadata with 3 variables:
+#' \describe{
+#'   \item{accession_id}{accession id}
+#'   \item{chebi_name}{Ch E B name }
+#'   \item{chebi_id}{Ch E B Id}
+#'   \item{short_name}{Short Name}
+#' }
+"drug_treatment"
+
+#' @title Cube Metadata Mouse_Strain 
+#'
+#' @name Cube Metadata Mouse_Strain
+#'
+#' @description Metadata information for Mouse_Strain
+#'
+#' @format A Disease metadata with 3 variables:
+#' \describe{
+#'   \item{accession_id}{accession id}
+#'   \item{strain_name}{strain_name }
+#'   \item{classification}{classification}
+#' }
+"mouse_strain"
+
+#' @source <https://www.github.com/TheJacksonLaboratory/cubeR>
 "snp_data"
 
 #' @title SNP Grid Data

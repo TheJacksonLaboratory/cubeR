@@ -1,0 +1,35 @@
+accession_id,subclass,target,seqclass,antibodies,short
+JAXAS00001,bead array,naked gDNA,N/A,no,MUGA
+JAXAS00002,sequencing,chromatin,Open Chromatin,no,mATAC-Seq
+JAXAS00003,anatomical,organism,N/A,no,Weight
+JAXAS00004,behavioural,organism,N/A,no,Food
+JAXAS00005,behavioural,organism,N/A,no,Water
+JAXAS00006,metabolic,metabolite,N/A,no,GTT
+JAXAS00007,anatomical,organism,N/A,no,NMR
+JAXAS00008,sequencing,bead array,naked RNA,RNA Seq,no
+JAXAS00009,metabolic,,,,DEXA
+JAXAS00010,metabolic,,,,iCAL
+JAXAS00011,microscopy,tissue,N/A,yes,Neuro
+JAXAS00012,microscopy,tissue,N/A,sometimes,Hist
+JAXAS00013,sequencing,naked RNA,cDNA/EST,no,t-Iso-Seq
+JAXAS00014,sequencing,naked RNA,cDNA/EST,no,Iso-Seq
+JAXAS00015,sequencing,chromatin,Open Chromatin,no,scATAC
+JAXAS00016,sequencing,naked RNA,RNA Seq,no,scRNA
+JAXAS00017,sequencing,naked gDNA,gDNA Seq,no,microWGS
+JAXAS00018,sequencing,naked gDNA,gDNA Seq,no,SV
+JAXAS00019,sequencing,naked gDNA,gDNA Seq,no,pWGS
+JAXAS00020,sequencing,chromatin,Chromosome Conformation,,ChIA-Drop
+JAXAS00021,sequencing,chromatin,Chromosome Conformation,yes,ChIA-PET
+JAXAS00022,sequencing,PCR products,gDNA Seq,no,I6S
+JAXAS00023,sequencing,PCR products,gDNA Seq,no,ITS
+JAXAS00024,sequencing,naked RNA,RNA Seq,no,DGE
+JAXAS00025,sequencing,naked gDNA,gDNA Seq,no,iWGS
+JAXAS00026,sequencing,naked RNA,RNA Seq,no,RNA-Seq
+JAXAS00027,sequencing,chromatin,Chromosome Conformation,no,pcHiC
+JAXAS00028,sequencing,protein,ChIP-Seq,yes,ChIP-Seq
+JAXAS00029,sequencing,chromatin,Chromosome Conformation,,HiC
+JAXAS00030,sequencing,chromatin,Open Chromatin,no,ATAC-Seq
+JAXAS00031,bead array,naked gDNA,N/A,no,GenoArry
+JAXAS00032,sequencing,naked RNA,microRNA,no,miRNA
+JAXAS00033,sequencing,naked gDNA,gDNA Seq,,WGBS
+JAXAS00034,bead array,naked gDNA,gDNA Seq,,MethylArray
