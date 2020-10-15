@@ -57,6 +57,33 @@
 #' }
 "mouse_strain"
 
+#' @title Cube Metadata Individual Mice 
+#'
+#' @name Cube Metadata Individual Mice
+#'
+#' @description Metadata information for Individual Mice
+#'
+#' @format A Disease metadata with 15 variables:
+#' \describe{
+#'   \item{mouseid}{mouse id}
+#'   \item{jumusid}{jumus id}
+#'   \item{other}{other}
+#'   \item{climbid}{climb id}
+#'   \item{dateofbirth}{date of birth}
+#'   \item{diet}{diet}
+#'   \item{datediet}{date diet}
+#'   \item{drugtreatment}{drug treatment}
+#'   \item{datedrugstarted}{date drug started}
+#'   \item{sex}{sex}
+#'   \item{comment}{comment}
+#'   \item{partofcohort}{part of cohort}
+#'   \item{study}{study}
+#'   \item{strain}{strain}
+#'   \item{partofstudy}{part of study}
+#' }
+"mice"
+
+
 #' @source <https://www.github.com/TheJacksonLaboratory/cubeR>
 "snp_data"
 
