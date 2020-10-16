@@ -9,14 +9,14 @@
 #' cubeR("Assay", "JAXAS00005")
 cubeR <- function(dataset="Assay", accession_ids="JAXAS00005"){
     print( paste("dataset: ", dataset) )
-   
-    data = switch(   
-        dataset,   
-        "Assay" = assay,   
-        "Disease" = disease,   
-        "Drug_Treatment" = drug_treatment,   
+
+    data = switch(
+        dataset,
+        "Assay" = assay,
+        "Disease" = disease,
+        "Drug_Treatment" = drug_treatment,
         "Mouse_Strain"= mouse_strain,
-        "Mice"= mice 
-    ) 
+        "Mouse"= mouse
+    )
     return (data)
 }

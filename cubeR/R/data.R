@@ -1,4 +1,4 @@
-#' @title Cube Metadata Assay 
+#' @title Cube Metadata Assay
 #'
 #' @name Cube Metadata Assay
 #'
@@ -14,7 +14,7 @@
 #' }
 "assay"
 
-#' @title Cube Metadata Disease 
+#' @title Cube Metadata Disease
 #'
 #' @name Cube Metadata Disease
 #'
@@ -28,7 +28,7 @@
 #' }
 "disease"
 
-#' @title Cube Metadata Drug_Treatment 
+#' @title Cube Metadata Drug_Treatment
 #'
 #' @name Cube Metadata Drug_Treatment
 #'
@@ -43,7 +43,7 @@
 #' }
 "drug_treatment"
 
-#' @title Cube Metadata Mouse_Strain 
+#' @title Cube Metadata Mouse_Strain
 #'
 #' @name Cube Metadata Mouse_Strain
 #'
@@ -57,11 +57,11 @@
 #' }
 "mouse_strain"
 
-#' @title Cube Metadata Individual Mice 
+#' @title Cube Metadata Individual Mouse
 #'
-#' @name Cube Metadata Individual Mice
+#' @name Cube Metadata Individual Mouse
 #'
-#' @description Metadata information for Individual Mice
+#' @description Metadata information for Individual Mouse
 #'
 #' @format A Disease metadata with 15 variables:
 #' \describe{
@@ -81,7 +81,7 @@
 #'   \item{strain}{strain}
 #'   \item{partofstudy}{part of study}
 #' }
-"mice"
+"mouse"
 
 
 #' @source <https://www.github.com/TheJacksonLaboratory/cubeR>
