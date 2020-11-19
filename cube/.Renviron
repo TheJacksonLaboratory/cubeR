@@ -1,0 +1,10 @@
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=xxxxx
+DB_USER=xxxxx
+DB_PASS=xxxxx
+
+# production
+#CUBE_APP_API_URL_BASE=https://metadata-service-prod.azurewebsites.net
+# sqa
+CUBE_APP_API_URL_BASE=https://metadata-service-sqa.azurewebsites.net/
