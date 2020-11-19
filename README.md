@@ -6,7 +6,7 @@
 install.packages("devtools")
 library("devtools")
 devtools::install_github("TheJacksonLaboratory/cubeR/cube")
-library(cubeR)
+library(cube)
 ```
 
 #### 
