@@ -37,8 +37,11 @@ CubeAPI <- R6::R6Class(
     initialize = function(
       url_base = NULL
     ) {
-      self$url_base <- url_base
-      if (missing(url_base)) self$url_base <- Sys.getenv("CUBE_APP_API_URL_BASE")
+      if (missing(url_base))
+        self$url_base <- Sys.getenv("CUBE_APP_API_URL_BASE")
+      else
+        self$url_base = url_base
+      message(self$url_base)
     },
 
     #' @description
