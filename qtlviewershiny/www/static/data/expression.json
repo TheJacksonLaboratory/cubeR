@@ -1,0 +1,3003 @@
+{
+  "result": {
+    "data": [
+      {
+        "DOwave": "1", 
+        "expression": -1.4454, 
+        "mouse.id": "DO021", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -2.4978, 
+        "mouse.id": "DO022", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.651, 
+        "mouse.id": "DO023", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.8905, 
+        "mouse.id": "DO024", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.4016, 
+        "mouse.id": "DO025", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0383, 
+        "mouse.id": "DO026", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.4907, 
+        "mouse.id": "DO027", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.226, 
+        "mouse.id": "DO028", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "mouse.id": "DO029", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.6836, 
+        "mouse.id": "DO030", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.7802, 
+        "mouse.id": "DO031", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0368, 
+        "mouse.id": "DO032", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.2668, 
+        "mouse.id": "DO033", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.3632, 
+        "mouse.id": "DO034", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6772, 
+        "mouse.id": "DO035", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.0133, 
+        "mouse.id": "DO036", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.3881, 
+        "mouse.id": "DO037", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.3692, 
+        "mouse.id": "DO038", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.7751, 
+        "mouse.id": "DO039", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.2249, 
+        "mouse.id": "DO040", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.9833, 
+        "mouse.id": "DO041", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3665, 
+        "mouse.id": "DO042", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.9188, 
+        "mouse.id": "DO043", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.7822, 
+        "mouse.id": "DO044", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "mouse.id": "DO045", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3133, 
+        "mouse.id": "DO046", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5833, 
+        "mouse.id": "DO047", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.1162, 
+        "mouse.id": "DO048", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.4099, 
+        "mouse.id": "DO049", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.8926, 
+        "mouse.id": "DO050", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5673, 
+        "mouse.id": "DO051", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.1945, 
+        "mouse.id": "DO052", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.1922, 
+        "mouse.id": "DO053", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3629, 
+        "mouse.id": "DO054", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.7376, 
+        "mouse.id": "DO055", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.2498, 
+        "mouse.id": "DO056", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.7383, 
+        "mouse.id": "DO057", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3813, 
+        "mouse.id": "DO058", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.4765, 
+        "mouse.id": "DO059", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6495, 
+        "mouse.id": "DO060", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.8954, 
+        "mouse.id": "DO061", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6899, 
+        "mouse.id": "DO062", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6266, 
+        "mouse.id": "DO063", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.501, 
+        "mouse.id": "DO064", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.2692, 
+        "mouse.id": "DO065", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.3492, 
+        "mouse.id": "DO066", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.9213, 
+        "mouse.id": "DO067", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3411, 
+        "mouse.id": "DO068", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.107, 
+        "mouse.id": "DO069", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.8723, 
+        "mouse.id": "DO070", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5647, 
+        "mouse.id": "DO071", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 1.164, 
+        "mouse.id": "DO072", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.4055, 
+        "mouse.id": "DO073", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -2.5208, 
+        "mouse.id": "DO074", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.4573, 
+        "mouse.id": "DO075", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.263, 
+        "mouse.id": "DO076", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "mouse.id": "DO077", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.2754, 
+        "mouse.id": "DO078", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.4279, 
+        "mouse.id": "DO079", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6779, 
+        "mouse.id": "DO080", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.2634, 
+        "mouse.id": "DO081", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0112, 
+        "mouse.id": "DO082", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6207, 
+        "mouse.id": "DO083", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.5482, 
+        "mouse.id": "DO084", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.0242, 
+        "mouse.id": "DO085", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.7823, 
+        "mouse.id": "DO086", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.2077, 
+        "mouse.id": "DO087", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 1.069, 
+        "mouse.id": "DO088", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.9626, 
+        "mouse.id": "DO089", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.3509, 
+        "mouse.id": "DO090", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.4772, 
+        "mouse.id": "DO091", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5938, 
+        "mouse.id": "DO092", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.6303, 
+        "mouse.id": "DO093", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0974, 
+        "mouse.id": "DO094", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.9808, 
+        "mouse.id": "DO095", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 1.3137, 
+        "mouse.id": "DO096", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.8729, 
+        "mouse.id": "DO097", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.6237, 
+        "mouse.id": "DO098", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.8354, 
+        "mouse.id": "DO099", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.1238, 
+        "mouse.id": "DO100", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.4333, 
+        "mouse.id": "DO101", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.0764, 
+        "mouse.id": "DO102", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.9591, 
+        "mouse.id": "DO103", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.0096, 
+        "mouse.id": "DO104", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 2.1633, 
+        "mouse.id": "DO105", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.7767, 
+        "mouse.id": "DO106", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5814, 
+        "mouse.id": "DO107", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.1205, 
+        "mouse.id": "DO108", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0123, 
+        "mouse.id": "DO109", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "mouse.id": "DO110", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.0102, 
+        "mouse.id": "DO111", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.5669, 
+        "mouse.id": "DO112", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.2027, 
+        "mouse.id": "DO113", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.4936, 
+        "mouse.id": "DO114", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.6444, 
+        "mouse.id": "DO115", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.0512, 
+        "mouse.id": "DO116", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "mouse.id": "DO117", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": 0.4282, 
+        "mouse.id": "DO118", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -0.0182, 
+        "mouse.id": "DO119", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "1", 
+        "expression": -1.5245, 
+        "mouse.id": "DO120", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8344, 
+        "mouse.id": "DO121", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9527, 
+        "mouse.id": "DO122", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.581, 
+        "mouse.id": "DO123", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.9612, 
+        "mouse.id": "DO124", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.0156, 
+        "mouse.id": "DO125", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5916, 
+        "mouse.id": "DO126", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO127", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.483, 
+        "mouse.id": "DO128", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8299, 
+        "mouse.id": "DO129", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7553, 
+        "mouse.id": "DO130", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9656, 
+        "mouse.id": "DO131", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7317, 
+        "mouse.id": "DO132", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.0202, 
+        "mouse.id": "DO133", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO134", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO135", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO136", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.2445, 
+        "mouse.id": "DO137", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -3.2465, 
+        "mouse.id": "DO138", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO139", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.3802, 
+        "mouse.id": "DO140", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7892, 
+        "mouse.id": "DO141", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5536, 
+        "mouse.id": "DO142", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.3061, 
+        "mouse.id": "DO143", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7384, 
+        "mouse.id": "DO144", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.4904, 
+        "mouse.id": "DO145", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.942, 
+        "mouse.id": "DO146", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.4682, 
+        "mouse.id": "DO147", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.3393, 
+        "mouse.id": "DO148", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1703, 
+        "mouse.id": "DO149", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8463, 
+        "mouse.id": "DO150", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8915, 
+        "mouse.id": "DO151", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.0791, 
+        "mouse.id": "DO152", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8254, 
+        "mouse.id": "DO153", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.2625, 
+        "mouse.id": "DO154", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.5428, 
+        "mouse.id": "DO155", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7326, 
+        "mouse.id": "DO156", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.0173, 
+        "mouse.id": "DO157", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8971, 
+        "mouse.id": "DO158", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5821, 
+        "mouse.id": "DO159", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7934, 
+        "mouse.id": "DO160", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8881, 
+        "mouse.id": "DO161", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8984, 
+        "mouse.id": "DO162", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9362, 
+        "mouse.id": "DO163", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.0864, 
+        "mouse.id": "DO164", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.5632, 
+        "mouse.id": "DO165", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5735, 
+        "mouse.id": "DO166", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.5977, 
+        "mouse.id": "DO167", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7118, 
+        "mouse.id": "DO168", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8509, 
+        "mouse.id": "DO169", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8428, 
+        "mouse.id": "DO170", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1373, 
+        "mouse.id": "DO171", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": 0.002, 
+        "mouse.id": "DO172", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1133, 
+        "mouse.id": "DO173", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.4671, 
+        "mouse.id": "DO174", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.7054, 
+        "mouse.id": "DO175", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7036, 
+        "mouse.id": "DO176", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.2244, 
+        "mouse.id": "DO177", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.7064, 
+        "mouse.id": "DO178", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.8624, 
+        "mouse.id": "DO179", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.4989, 
+        "mouse.id": "DO180", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.7681, 
+        "mouse.id": "DO181", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.0511, 
+        "mouse.id": "DO182", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7983, 
+        "mouse.id": "DO183", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.4911, 
+        "mouse.id": "DO184", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5393, 
+        "mouse.id": "DO185", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1003, 
+        "mouse.id": "DO186", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.6961, 
+        "mouse.id": "DO187", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7801, 
+        "mouse.id": "DO188", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5753, 
+        "mouse.id": "DO189", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7583, 
+        "mouse.id": "DO190", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.124, 
+        "mouse.id": "DO191", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5659, 
+        "mouse.id": "DO192", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.6182, 
+        "mouse.id": "DO193", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.3447, 
+        "mouse.id": "DO194", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.3232, 
+        "mouse.id": "DO195", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5526, 
+        "mouse.id": "DO196", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.0571, 
+        "mouse.id": "DO197", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "mouse.id": "DO198", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9269, 
+        "mouse.id": "DO199", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9208, 
+        "mouse.id": "DO200", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": 0.1651, 
+        "mouse.id": "DO201", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.5673, 
+        "mouse.id": "DO202", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5143, 
+        "mouse.id": "DO203", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.0045, 
+        "mouse.id": "DO204", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5711, 
+        "mouse.id": "DO205", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.8935, 
+        "mouse.id": "DO206", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.7622, 
+        "mouse.id": "DO207", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.1452, 
+        "mouse.id": "DO208", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1026, 
+        "mouse.id": "DO209", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.5295, 
+        "mouse.id": "DO210", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.6612, 
+        "mouse.id": "DO211", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7656, 
+        "mouse.id": "DO212", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -2.7344, 
+        "mouse.id": "DO213", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7919, 
+        "mouse.id": "DO214", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": 0.6475, 
+        "mouse.id": "DO215", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.9624, 
+        "mouse.id": "DO216", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.892, 
+        "mouse.id": "DO217", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.7706, 
+        "mouse.id": "DO218", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -0.5213, 
+        "mouse.id": "DO219", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "2", 
+        "expression": -1.1872, 
+        "mouse.id": "DO220", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.306, 
+        "mouse.id": "DO221", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.6355, 
+        "mouse.id": "DO222", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4237, 
+        "mouse.id": "DO223", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.7156, 
+        "mouse.id": "DO224", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9629, 
+        "mouse.id": "DO225", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.1433, 
+        "mouse.id": "DO226", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.7198, 
+        "mouse.id": "DO227", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0283, 
+        "mouse.id": "DO228", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.7095, 
+        "mouse.id": "DO229", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.229, 
+        "mouse.id": "DO230", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0611, 
+        "mouse.id": "DO231", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.1813, 
+        "mouse.id": "DO232", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.5787, 
+        "mouse.id": "DO233", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.7967, 
+        "mouse.id": "DO234", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.364, 
+        "mouse.id": "DO235", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.2696, 
+        "mouse.id": "DO236", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.5709, 
+        "mouse.id": "DO237", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9703, 
+        "mouse.id": "DO238", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.3921, 
+        "mouse.id": "DO239", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.0534, 
+        "mouse.id": "DO240", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.4541, 
+        "mouse.id": "DO241", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.2669, 
+        "mouse.id": "DO242", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.1459, 
+        "mouse.id": "DO243", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.2484, 
+        "mouse.id": "DO244", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.5255, 
+        "mouse.id": "DO245", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.1436, 
+        "mouse.id": "DO246", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.72, 
+        "mouse.id": "DO247", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.1122, 
+        "mouse.id": "DO248", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.2122, 
+        "mouse.id": "DO249", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.3558, 
+        "mouse.id": "DO250", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.8782, 
+        "mouse.id": "DO251", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0707, 
+        "mouse.id": "DO252", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.6779, 
+        "mouse.id": "DO253", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.1366, 
+        "mouse.id": "DO254", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.0806, 
+        "mouse.id": "DO255", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.5284, 
+        "mouse.id": "DO256", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.4444, 
+        "mouse.id": "DO257", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.0462, 
+        "mouse.id": "DO258", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.3367, 
+        "mouse.id": "DO259", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.731, 
+        "mouse.id": "DO260", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.1879, 
+        "mouse.id": "DO261", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.1153, 
+        "mouse.id": "DO262", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.857, 
+        "mouse.id": "DO263", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9256, 
+        "mouse.id": "DO264", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.4439, 
+        "mouse.id": "DO265", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.5546, 
+        "mouse.id": "DO266", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.0733, 
+        "mouse.id": "DO267", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.6359, 
+        "mouse.id": "DO268", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.3419, 
+        "mouse.id": "DO269", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.2686, 
+        "mouse.id": "DO270", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.4071, 
+        "mouse.id": "DO271", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.6404, 
+        "mouse.id": "DO272", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.1102, 
+        "mouse.id": "DO273", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.6917, 
+        "mouse.id": "DO274", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4163, 
+        "mouse.id": "DO275", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4061, 
+        "mouse.id": "DO276", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.8678, 
+        "mouse.id": "DO277", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.4856, 
+        "mouse.id": "DO278", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 1.2356, 
+        "mouse.id": "DO279", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.0097, 
+        "mouse.id": "DO280", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.5181, 
+        "mouse.id": "DO281", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.2318, 
+        "mouse.id": "DO282", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.9421, 
+        "mouse.id": "DO283", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.441, 
+        "mouse.id": "DO284", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.056, 
+        "mouse.id": "DO285", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9046, 
+        "mouse.id": "DO286", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.3765, 
+        "mouse.id": "DO287", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.7443, 
+        "mouse.id": "DO288", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.2903, 
+        "mouse.id": "DO289", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 1.5041, 
+        "mouse.id": "DO290", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.2055, 
+        "mouse.id": "DO291", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.6706, 
+        "mouse.id": "DO292", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.6399, 
+        "mouse.id": "DO293", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9637, 
+        "mouse.id": "DO294", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -2.8672, 
+        "mouse.id": "DO295", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.9633, 
+        "mouse.id": "DO296", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.8273, 
+        "mouse.id": "DO297", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4447, 
+        "mouse.id": "DO298", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.5935, 
+        "mouse.id": "DO299", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0845, 
+        "mouse.id": "DO300", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0419, 
+        "mouse.id": "DO301", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4533, 
+        "mouse.id": "DO302", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.62, 
+        "mouse.id": "DO303", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.2489, 
+        "mouse.id": "DO304", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.3667, 
+        "mouse.id": "DO305", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.4147, 
+        "mouse.id": "DO306", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.7036, 
+        "mouse.id": "DO307", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.8218, 
+        "mouse.id": "DO308", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.7851, 
+        "mouse.id": "DO309", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9352, 
+        "mouse.id": "DO310", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.4664, 
+        "mouse.id": "DO311", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.5185, 
+        "mouse.id": "DO312", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.7321, 
+        "mouse.id": "DO313", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.2019, 
+        "mouse.id": "DO314", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.1284, 
+        "mouse.id": "DO315", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.9848, 
+        "mouse.id": "DO316", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.0877, 
+        "mouse.id": "DO317", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": 0.595, 
+        "mouse.id": "DO318", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -0.9125, 
+        "mouse.id": "DO319", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "3", 
+        "expression": -1.0099, 
+        "mouse.id": "DO320", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.4833, 
+        "mouse.id": "DO321", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6013, 
+        "mouse.id": "DO322", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.9219, 
+        "mouse.id": "DO323", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.4535, 
+        "mouse.id": "DO324", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.7276, 
+        "mouse.id": "DO325", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -3.2803, 
+        "mouse.id": "DO326", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.6267, 
+        "mouse.id": "DO327", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.5149, 
+        "mouse.id": "DO328", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.7322, 
+        "mouse.id": "DO329", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.3355, 
+        "mouse.id": "DO330", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4765, 
+        "mouse.id": "DO331", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.7274, 
+        "mouse.id": "DO332", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0278, 
+        "mouse.id": "DO333", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "mouse.id": "DO334", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.1435, 
+        "mouse.id": "DO335", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.3979, 
+        "mouse.id": "DO336", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.8457, 
+        "mouse.id": "DO337", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.3288, 
+        "mouse.id": "DO338", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.7421, 
+        "mouse.id": "DO339", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.1509, 
+        "mouse.id": "DO340", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "mouse.id": "DO341", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.2695, 
+        "mouse.id": "DO342", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.8254, 
+        "mouse.id": "DO343", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6792, 
+        "mouse.id": "DO344", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0105, 
+        "mouse.id": "DO345", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6222, 
+        "mouse.id": "DO346", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.3281, 
+        "mouse.id": "DO347", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.7529, 
+        "mouse.id": "DO348", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.7478, 
+        "mouse.id": "DO349", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.2805, 
+        "mouse.id": "DO350", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "mouse.id": "DO351", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.6702, 
+        "mouse.id": "DO352", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.2872, 
+        "mouse.id": "DO353", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.3764, 
+        "mouse.id": "DO354", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.5376, 
+        "mouse.id": "DO355", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0576, 
+        "mouse.id": "DO356", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6012, 
+        "mouse.id": "DO357", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0855, 
+        "mouse.id": "DO358", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.9463, 
+        "mouse.id": "DO359", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.7402, 
+        "mouse.id": "DO360", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4858, 
+        "mouse.id": "DO361", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.3449, 
+        "mouse.id": "DO362", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.642, 
+        "mouse.id": "DO363", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.1015, 
+        "mouse.id": "DO364", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.1685, 
+        "mouse.id": "DO365", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4634, 
+        "mouse.id": "DO366", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6835, 
+        "mouse.id": "DO367", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.1465, 
+        "mouse.id": "DO368", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.5871, 
+        "mouse.id": "DO369", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.4514, 
+        "mouse.id": "DO370", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.056, 
+        "mouse.id": "DO371", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.4109, 
+        "mouse.id": "DO372", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.1884, 
+        "mouse.id": "DO373", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 1.8767, 
+        "mouse.id": "DO374", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.1176, 
+        "mouse.id": "DO375", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.4477, 
+        "mouse.id": "DO376", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.3065, 
+        "mouse.id": "DO377", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.1685, 
+        "mouse.id": "DO378", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0129, 
+        "mouse.id": "DO379", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4464, 
+        "mouse.id": "DO380", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4646, 
+        "mouse.id": "DO381", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.5171, 
+        "mouse.id": "DO382", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.4694, 
+        "mouse.id": "DO383", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.8924, 
+        "mouse.id": "DO384", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6032, 
+        "mouse.id": "DO385", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.5658, 
+        "mouse.id": "DO386", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.6552, 
+        "mouse.id": "DO387", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.3741, 
+        "mouse.id": "DO388", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.2814, 
+        "mouse.id": "DO389", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.8923, 
+        "mouse.id": "DO390", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.2699, 
+        "mouse.id": "DO391", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.4584, 
+        "mouse.id": "DO392", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.4211, 
+        "mouse.id": "DO393", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.7395, 
+        "mouse.id": "DO394", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.7236, 
+        "mouse.id": "DO395", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.0744, 
+        "mouse.id": "DO396", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.0746, 
+        "mouse.id": "DO397", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 1.092, 
+        "mouse.id": "DO398", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.6703, 
+        "mouse.id": "DO399", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.8428, 
+        "mouse.id": "DO400", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.0851, 
+        "mouse.id": "DO401", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.1979, 
+        "mouse.id": "DO402", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.5363, 
+        "mouse.id": "DO403", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 1.4091, 
+        "mouse.id": "DO404", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.2301, 
+        "mouse.id": "DO405", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.0675, 
+        "mouse.id": "DO406", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -2.2011, 
+        "mouse.id": "DO407", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.1626, 
+        "mouse.id": "DO408", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.2227, 
+        "mouse.id": "DO409", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.1816, 
+        "mouse.id": "DO410", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -0.703, 
+        "mouse.id": "DO411", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.8962, 
+        "mouse.id": "DO412", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.5044, 
+        "mouse.id": "DO413", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.6294, 
+        "mouse.id": "DO414", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": -1.5609, 
+        "mouse.id": "DO415", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.3132, 
+        "mouse.id": "DO416", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.6489, 
+        "mouse.id": "DO417", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "mouse.id": "DO418", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "mouse.id": "DO419", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "4", 
+        "expression": 0.5943, 
+        "mouse.id": "DO420", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2884, 
+        "mouse.id": "DO461", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8402, 
+        "mouse.id": "DO462", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.5578, 
+        "mouse.id": "DO463", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 1.3715, 
+        "mouse.id": "DO464", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1272, 
+        "mouse.id": "DO465", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.5736, 
+        "mouse.id": "DO466", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1717, 
+        "mouse.id": "DO467", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.1972, 
+        "mouse.id": "DO468", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.0983, 
+        "mouse.id": "DO469", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -2.7586, 
+        "mouse.id": "DO470", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.067, 
+        "mouse.id": "DO471", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.4903, 
+        "mouse.id": "DO472", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.6433, 
+        "mouse.id": "DO473", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.6243, 
+        "mouse.id": "DO474", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9878, 
+        "mouse.id": "DO475", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2674, 
+        "mouse.id": "DO476", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.4782, 
+        "mouse.id": "DO477", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8998, 
+        "mouse.id": "DO478", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.7765, 
+        "mouse.id": "DO479", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.317, 
+        "mouse.id": "DO480", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.5569, 
+        "mouse.id": "DO481", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9139, 
+        "mouse.id": "DO482", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9415, 
+        "mouse.id": "DO483", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1567, 
+        "mouse.id": "DO484", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.0993, 
+        "mouse.id": "DO485", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.4252, 
+        "mouse.id": "DO486", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.197, 
+        "mouse.id": "DO487", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8518, 
+        "mouse.id": "DO488", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.6169, 
+        "mouse.id": "DO489", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.3086, 
+        "mouse.id": "DO490", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2867, 
+        "mouse.id": "DO491", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8344, 
+        "mouse.id": "DO492", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.6499, 
+        "mouse.id": "DO493", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.1769, 
+        "mouse.id": "DO494", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.3062, 
+        "mouse.id": "DO495", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -2.3367, 
+        "mouse.id": "DO496", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -2.0137, 
+        "mouse.id": "DO497", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.7787, 
+        "mouse.id": "DO498", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -2.1027, 
+        "mouse.id": "DO499", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.6139, 
+        "mouse.id": "DO500", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.0718, 
+        "mouse.id": "DO501", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2671, 
+        "mouse.id": "DO502", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.7983, 
+        "mouse.id": "DO503", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.2516, 
+        "mouse.id": "DO504", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.1134, 
+        "mouse.id": "DO505", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2343, 
+        "mouse.id": "DO506", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.0508, 
+        "mouse.id": "DO507", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.0133, 
+        "mouse.id": "DO508", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "mouse.id": "DO509", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.6186, 
+        "mouse.id": "DO510", 
+        "sex": "F"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.4099, 
+        "mouse.id": "DO511", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.8906, 
+        "mouse.id": "DO512", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.0094, 
+        "mouse.id": "DO513", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.1554, 
+        "mouse.id": "DO514", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9803, 
+        "mouse.id": "DO515", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -3.0139, 
+        "mouse.id": "DO516", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.5378, 
+        "mouse.id": "DO517", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.4911, 
+        "mouse.id": "DO518", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.3374, 
+        "mouse.id": "DO519", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8781, 
+        "mouse.id": "DO520", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.492, 
+        "mouse.id": "DO521", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.0434, 
+        "mouse.id": "DO522", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.0638, 
+        "mouse.id": "DO523", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.9999, 
+        "mouse.id": "DO524", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1198, 
+        "mouse.id": "DO525", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8653, 
+        "mouse.id": "DO526", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1483, 
+        "mouse.id": "DO527", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.1899, 
+        "mouse.id": "DO528", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.8112, 
+        "mouse.id": "DO529", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.1904, 
+        "mouse.id": "DO530", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2663, 
+        "mouse.id": "DO531", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9407, 
+        "mouse.id": "DO532", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.7534, 
+        "mouse.id": "DO533", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.0204, 
+        "mouse.id": "DO534", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.4476, 
+        "mouse.id": "DO535", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.8135, 
+        "mouse.id": "DO536", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2045, 
+        "mouse.id": "DO537", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.9217, 
+        "mouse.id": "DO538", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.3683, 
+        "mouse.id": "DO539", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.5791, 
+        "mouse.id": "DO540", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.6252, 
+        "mouse.id": "DO541", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 2.0556, 
+        "mouse.id": "DO542", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.5315, 
+        "mouse.id": "DO543", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.0887, 
+        "mouse.id": "DO544", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 1.5068, 
+        "mouse.id": "DO545", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.3237, 
+        "mouse.id": "DO546", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.8126, 
+        "mouse.id": "DO547", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.1763, 
+        "mouse.id": "DO548", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.6411, 
+        "mouse.id": "DO549", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.7881, 
+        "mouse.id": "DO550", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.0871, 
+        "mouse.id": "DO551", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.2556, 
+        "mouse.id": "DO552", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.1193, 
+        "mouse.id": "DO553", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": 0.0362, 
+        "mouse.id": "DO554", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.6683, 
+        "mouse.id": "DO555", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.9725, 
+        "mouse.id": "DO556", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.2423, 
+        "mouse.id": "DO557", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.4546, 
+        "mouse.id": "DO558", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -1.9441, 
+        "mouse.id": "DO559", 
+        "sex": "M"
+      }, 
+      {
+        "DOwave": "5", 
+        "expression": -0.0755, 
+        "mouse.id": "DO560", 
+        "sex": "M"
+      }
+    ], 
+    "datatypes": {
+      "DOwave": [
+        "1", 
+        "2", 
+        "3", 
+        "4", 
+        "5"
+      ], 
+      "sex": [
+        "F", 
+        "M"
+      ]
+    }
+  }, 
+  "time": 0.072
+}

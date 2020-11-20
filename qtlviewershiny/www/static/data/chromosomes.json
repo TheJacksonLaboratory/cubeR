@@ -1,0 +1,121 @@
+{
+  "chromosomes": [
+    {
+      "chromosome": "1", 
+      "length": 195471971, 
+      "order": 1
+    }, 
+    {
+      "chromosome": "2", 
+      "length": 182113224, 
+      "order": 2
+    }, 
+    {
+      "chromosome": "3", 
+      "length": 160039680, 
+      "order": 3
+    }, 
+    {
+      "chromosome": "4", 
+      "length": 156508116, 
+      "order": 4
+    }, 
+    {
+      "chromosome": "5", 
+      "length": 151834684, 
+      "order": 5
+    }, 
+    {
+      "chromosome": "6", 
+      "length": 149736546, 
+      "order": 6
+    }, 
+    {
+      "chromosome": "7", 
+      "length": 145441459, 
+      "order": 7
+    }, 
+    {
+      "chromosome": "8", 
+      "length": 129401213, 
+      "order": 8
+    }, 
+    {
+      "chromosome": "9", 
+      "length": 124595110, 
+      "order": 9
+    }, 
+    {
+      "chromosome": "10", 
+      "length": 130694993, 
+      "order": 10
+    }, 
+    {
+      "chromosome": "11", 
+      "length": 122082543, 
+      "order": 11
+    }, 
+    {
+      "chromosome": "12", 
+      "length": 120129022, 
+      "order": 12
+    }, 
+    {
+      "chromosome": "13", 
+      "length": 120421639, 
+      "order": 13
+    }, 
+    {
+      "chromosome": "14", 
+      "length": 124902244, 
+      "order": 14
+    }, 
+    {
+      "chromosome": "15", 
+      "length": 104043685, 
+      "order": 15
+    }, 
+    {
+      "chromosome": "16", 
+      "length": 98207768, 
+      "order": 16
+    }, 
+    {
+      "chromosome": "17", 
+      "length": 94987271, 
+      "order": 17
+    }, 
+    {
+      "chromosome": "18", 
+      "length": 90702639, 
+      "order": 18
+    }, 
+    {
+      "chromosome": "19", 
+      "length": 61431566, 
+      "order": 19
+    }, 
+    {
+      "chromosome": "X", 
+      "length": 171031299, 
+      "order": 20
+    }, 
+    {
+      "chromosome": "Y", 
+      "length": 91744698, 
+      "order": 21
+    }, 
+    {
+      "chromosome": "MT", 
+      "length": 16299, 
+      "order": 22
+    }
+  ], 
+  "meta": {
+    "assembly": "GRCm38", 
+    "assembly_patch": "GRCm38.p2", 
+    "release": "75", 
+    "species": "Mm", 
+    "url": "http://feb2014.archive.ensembl.org"
+  }
+}

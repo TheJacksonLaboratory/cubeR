@@ -1,0 +1,433 @@
+{
+  "id": "dataset.invivo", 
+  "result": {
+    "additive": [
+      [
+        "1_54820400", 
+        "1", 
+        54.8204, 
+        "weight_sac", 
+        "body weight at sac", 
+        "Final weight of mouse; gm", 
+        6.6326
+      ], 
+      [
+        "10_109976614", 
+        "10", 
+        109.9766, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        7.1767
+      ], 
+      [
+        "10_86809066", 
+        "10", 
+        86.8091, 
+        "TG_sac", 
+        "plasma triglyceride at sac", 
+        "Plasma triglyceride (TG) with units of mg/dl; fasting.", 
+        7.8968
+      ], 
+      [
+        "11_11687539", 
+        "11", 
+        11.6875, 
+        "food_ave", 
+        "daily food consumption", 
+        "Average daily food consumption for all measurements made for each mouse; gm/day", 
+        6.3659
+      ], 
+      [
+        "11_72601385", 
+        "11", 
+        72.6014, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        7.0662
+      ], 
+      [
+        "11_80764867", 
+        "11", 
+        80.7649, 
+        "Ins_0min", 
+        "plasma insulin at time 0 of oGTT", 
+        "Value of fasting plasma insulin at time t=0 for the oGTT.", 
+        7.2087
+      ], 
+      [
+        "11_83594665", 
+        "11", 
+        83.5947, 
+        "Ins_tAUC", 
+        "AUC insulin", 
+        "Area under the curve (AUC) calculation for total insulin during oGTT", 
+        11.0746
+      ], 
+      [
+        "11_84116592", 
+        "11", 
+        84.1166, 
+        "Ins_tAUC_adj_Ins_0min", 
+        "AUC insulin given insulin at time 0 of oGTT", 
+        "AUC insulin conditioned on plasma insulin value at time t=0 of oGTT", 
+        6.2753
+      ], 
+      [
+        "11_84954440", 
+        "11", 
+        84.9544, 
+        "HOMA_B_0min", 
+        "HOMA-B", 
+        "homeostatic model assessment (HOMA) for beta-cell function. Computed as 360 * Insulin / (Glucose - 63) at time t=0 for the oGTT", 
+        9.5371
+      ], 
+      [
+        "11_85966439", 
+        "11", 
+        85.9664, 
+        "TG_sac", 
+        "plasma triglyceride at sac", 
+        "Plasma triglyceride (TG) with units of mg/dl; fasting.", 
+        6.2812
+      ], 
+      [
+        "12_75026442", 
+        "12", 
+        75.0264, 
+        "HOMA_B_0min", 
+        "HOMA-B", 
+        "homeostatic model assessment (HOMA) for beta-cell function. Computed as 360 * Insulin / (Glucose - 63) at time t=0 for the oGTT", 
+        6.0181
+      ], 
+      [
+        "12_75147681", 
+        "12", 
+        75.1477, 
+        "Ins_0min", 
+        "plasma insulin at time 0 of oGTT", 
+        "Value of fasting plasma insulin at time t=0 for the oGTT.", 
+        6.7066
+      ], 
+      [
+        "12_76511169", 
+        "12", 
+        76.5112, 
+        "HOMA_IR_0min", 
+        "HOMA-IR", 
+        "homeostatic model assessment (HOMA) for insulin resistance. Computed as glucose*insulin/405 at time t=0 for the oGTT", 
+        6.3242
+      ], 
+      [
+        "13_72552722", 
+        "13", 
+        72.5527, 
+        "Glu_sac", 
+        "plasma glucose at sac", 
+        "Plasma glucose with units of mg/dl; fasting.", 
+        6.1402
+      ], 
+      [
+        "13_97466637", 
+        "13", 
+        97.4666, 
+        "HOMA_IR_0min", 
+        "HOMA-IR", 
+        "homeostatic model assessment (HOMA) for insulin resistance. Computed as glucose*insulin/405 at time t=0 for the oGTT", 
+        6.7322
+      ], 
+      [
+        "15_48627418", 
+        "15", 
+        48.6274, 
+        "Glu_0min", 
+        "plasma glucose at time 0 of oGTT", 
+        "Value of fasting plasma glucose at time t=0 for the oGTT.", 
+        6.349
+      ], 
+      [
+        "15_99911172", 
+        "15", 
+        99.9112, 
+        "Glu_sac", 
+        "plasma glucose at sac", 
+        "Plasma glucose with units of mg/dl; fasting.", 
+        7.1825
+      ], 
+      [
+        "17_31648772", 
+        "17", 
+        31.6488, 
+        "weight_sac", 
+        "body weight at sac", 
+        "Final weight of mouse; gm", 
+        6.0638
+      ], 
+      [
+        "17_71718856", 
+        "17", 
+        71.7189, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        6.8159
+      ], 
+      [
+        "17_72177507", 
+        "17", 
+        72.1775, 
+        "HOMA_IR_0min", 
+        "HOMA-IR", 
+        "homeostatic model assessment (HOMA) for insulin resistance. Computed as glucose*insulin/405 at time t=0 for the oGTT", 
+        6.4886
+      ], 
+      [
+        "17_72177507", 
+        "17", 
+        72.1775, 
+        "Ins_0min", 
+        "plasma insulin at time 0 of oGTT", 
+        "Value of fasting plasma insulin at time t=0 for the oGTT.", 
+        6.5463
+      ], 
+      [
+        "3_151191183", 
+        "3", 
+        151.1912, 
+        "weight_sac", 
+        "body weight at sac", 
+        "Final weight of mouse; gm", 
+        6.3181
+      ], 
+      [
+        "3_33350818", 
+        "3", 
+        33.3508, 
+        "Ins_tAUC_adj_Ins_0min", 
+        "AUC insulin given insulin at time 0 of oGTT", 
+        "AUC insulin conditioned on plasma insulin value at time t=0 of oGTT", 
+        6.5041
+      ], 
+      [
+        "4_28929690", 
+        "4", 
+        28.9297, 
+        "Glu_sac", 
+        "plasma glucose at sac", 
+        "Plasma glucose with units of mg/dl; fasting.", 
+        6.3017
+      ], 
+      [
+        "5_151520204", 
+        "5", 
+        151.5202, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        6.1266
+      ], 
+      [
+        "5_38720980", 
+        "5", 
+        38.721, 
+        "Glu_tAUC_adj_Glu_0min", 
+        "AUC glucose given glucose at time 0 of oGTT", 
+        "AUC glucose conditioned on plasma glucose value at time t=0 of oGTT", 
+        6.5163
+      ], 
+      [
+        "6_40894718", 
+        "6", 
+        40.8947, 
+        "Glu_0min", 
+        "plasma glucose at time 0 of oGTT", 
+        "Value of fasting plasma glucose at time t=0 for the oGTT.", 
+        6.0528
+      ]
+    ], 
+    "sex": [
+      [
+        "10_46945144", 
+        "10", 
+        46.9451, 
+        "Glu_tAUC", 
+        "AUC glucose", 
+        "Area under the curve (AUC) calculation for total glucose during oGTT", 
+        6.018
+      ], 
+      [
+        "11_110952727", 
+        "11", 
+        110.9527, 
+        "HOMA_IR_0min", 
+        "HOMA-IR", 
+        "homeostatic model assessment (HOMA) for insulin resistance. Computed as glucose*insulin/405 at time t=0 for the oGTT", 
+        6.016
+      ], 
+      [
+        "11_72989681", 
+        "11", 
+        72.9897, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        6.939
+      ], 
+      [
+        "12_56647311", 
+        "12", 
+        56.6473, 
+        "Glu_sac", 
+        "plasma glucose at sac", 
+        "Plasma glucose with units of mg/dl; fasting.", 
+        6.143
+      ], 
+      [
+        "13_31716878", 
+        "13", 
+        31.7169, 
+        "Glu_tAUC_adj_Glu_0min", 
+        "AUC glucose given glucose at time 0 of oGTT", 
+        "AUC glucose conditioned on plasma glucose value at time t=0 of oGTT", 
+        6.9035
+      ], 
+      [
+        "13_72261252", 
+        "13", 
+        72.2613, 
+        "Glu_0min", 
+        "plasma glucose at time 0 of oGTT", 
+        "Value of fasting plasma glucose at time t=0 for the oGTT.", 
+        6.1603
+      ], 
+      [
+        "2_117187345", 
+        "2", 
+        117.1873, 
+        "food_ave", 
+        "daily food consumption", 
+        "Average daily food consumption for all measurements made for each mouse; gm/day", 
+        6.5115
+      ], 
+      [
+        "2_132270487", 
+        "2", 
+        132.2705, 
+        "Glu_tAUC", 
+        "AUC glucose", 
+        "Area under the curve (AUC) calculation for total glucose during oGTT", 
+        7.0213
+      ], 
+      [
+        "2_132270487", 
+        "2", 
+        132.2705, 
+        "Glu_tAUC_adj_Glu_0min", 
+        "AUC glucose given glucose at time 0 of oGTT", 
+        "AUC glucose conditioned on plasma glucose value at time t=0 of oGTT", 
+        6.4832
+      ], 
+      [
+        "2_155253014", 
+        "2", 
+        155.253, 
+        "Glu_sac", 
+        "plasma glucose at sac", 
+        "Plasma glucose with units of mg/dl; fasting.", 
+        6.5278
+      ], 
+      [
+        "2_171802033", 
+        "2", 
+        171.802, 
+        "TG_sac", 
+        "plasma triglyceride at sac", 
+        "Plasma triglyceride (TG) with units of mg/dl; fasting.", 
+        6.4024
+      ], 
+      [
+        "2_75677078", 
+        "2", 
+        75.6771, 
+        "Ins_tAUC", 
+        "AUC insulin", 
+        "Area under the curve (AUC) calculation for total insulin during oGTT", 
+        6.3269
+      ], 
+      [
+        "2_75677078", 
+        "2", 
+        75.6771, 
+        "Ins_tAUC_adj_Ins_0min", 
+        "AUC insulin given insulin at time 0 of oGTT", 
+        "AUC insulin conditioned on plasma insulin value at time t=0 of oGTT", 
+        7.4869
+      ], 
+      [
+        "3_103604930", 
+        "3", 
+        103.6049, 
+        "TG_sac", 
+        "plasma triglyceride at sac", 
+        "Plasma triglyceride (TG) with units of mg/dl; fasting.", 
+        6.1995
+      ], 
+      [
+        "3_120468969", 
+        "3", 
+        120.469, 
+        "Ins_sac", 
+        "plasma insulin at sac", 
+        "Plasma insulin with units of ng/ml; fasting.", 
+        6.0402
+      ], 
+      [
+        "5_132318585", 
+        "5", 
+        132.3186, 
+        "TG_sac", 
+        "plasma triglyceride at sac", 
+        "Plasma triglyceride (TG) with units of mg/dl; fasting.", 
+        7.035
+      ], 
+      [
+        "5_46999194", 
+        "5", 
+        46.9992, 
+        "Glu_tAUC", 
+        "AUC glucose", 
+        "Area under the curve (AUC) calculation for total glucose during oGTT", 
+        6.3068
+      ], 
+      [
+        "7_142787656", 
+        "7", 
+        142.7877, 
+        "Ins_tAUC_adj_Ins_0min", 
+        "AUC insulin given insulin at time 0 of oGTT", 
+        "AUC insulin conditioned on plasma insulin value at time t=0 of oGTT", 
+        6.2018
+      ], 
+      [
+        "8_8457798", 
+        "8", 
+        8.4578, 
+        "Glu_0min", 
+        "plasma glucose at time 0 of oGTT", 
+        "Value of fasting plasma glucose at time t=0 for the oGTT.", 
+        6.5276
+      ], 
+      [
+        "9_54169026", 
+        "9", 
+        54.169, 
+        "weight_sac", 
+        "body weight at sac", 
+        "Final weight of mouse; gm", 
+        6.3233
+      ]
+    ]
+  }, 
+  "time": 0.126
+}

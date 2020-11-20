@@ -1,0 +1,117 @@
+{
+  "result": [
+    {
+      "cor": 1, 
+      "id": "G33_ins_secrete_gm"
+    }, 
+    {
+      "cor": 1, 
+      "id": "G33_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.8096, 
+      "id": "G83_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.8096, 
+      "id": "G83_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.8096, 
+      "id": "G83_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.7706, 
+      "id": "AA_G83_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.7706, 
+      "id": "AA_G83_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.7706, 
+      "id": "AA_G83_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.7706, 
+      "id": "AA_G83_ins_secrete_gm_adj_G83"
+    }, 
+    {
+      "cor": 0.7357, 
+      "id": "GLP1_G83_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.7357, 
+      "id": "GLP1_G83_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.7357, 
+      "id": "GLP1_G83_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.7357, 
+      "id": "GLP1_G83_ins_secrete_gm_adj_G83"
+    }, 
+    {
+      "cor": 0.6393, 
+      "id": "KCl_G33_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.6393, 
+      "id": "KCl_G33_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.6393, 
+      "id": "KCl_G33_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.6066, 
+      "id": "G167_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.6066, 
+      "id": "G167_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.6066, 
+      "id": "G167_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.5542, 
+      "id": "PA_G167_ins_secrete_gm"
+    }, 
+    {
+      "cor": 0.5542, 
+      "id": "PA_G167_ins_secrete_gm_adj_IPI"
+    }, 
+    {
+      "cor": 0.5542, 
+      "id": "PA_G167_ins_secrete_gm_adj_G33"
+    }, 
+    {
+      "cor": 0.5542, 
+      "id": "PA_G167_ins_secrete_gm_adj_G167"
+    }, 
+    {
+      "cor": 0.3699, 
+      "id": "Ins_per_islet"
+    }, 
+    {
+      "cor": 0.3384, 
+      "id": "num_islets"
+    }, 
+    {
+      "cor": -0.0967, 
+      "id": "Gcg_content"
+    }, 
+    {
+      "cor": -0.0239, 
+      "id": "Gcg_secreted"
+    }, 
+    {
+      "cor": -0.0239, 
+      "id": "Gcg_secreted_adj_Gcg_content"
+    }
+  ], 
+  "time": 0.479
+}

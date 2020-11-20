@@ -1,0 +1,721 @@
+{
+  "id": "dataset.exvivo", 
+  "result": {
+    "additive": [
+      [
+        "1_144083125", 
+        "1", 
+        144.0831, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.2193
+      ], 
+      [
+        "1_144796045", 
+        "1", 
+        144.796, 
+        "KCl_G33_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for KCL + 3.3mM G given insulin/islet", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on insulin/islet", 
+        6.2426
+      ], 
+      [
+        "1_144860937", 
+        "1", 
+        144.8609, 
+        "KCl_G33_ins_secrete_gm", 
+        "insulin secretion for KCL + 3.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to KCL + 3.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.8143
+      ], 
+      [
+        "1_154569760", 
+        "1", 
+        154.5698, 
+        "PA_G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for PA + 16.7mM G given 3.3mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 3.3mM glucose", 
+        6.3459
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "AA_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for AA + 8.3mM G given insulin/islet", 
+        "insulin secretion for AA + 8.3mM glucose conditioned on insulin/islet", 
+        7.4243
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "G33_ins_secrete_gm", 
+        "insulin secretion for 3.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 3.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.6069
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "GLP1_G83_ins_secrete_gm", 
+        "insulin secretion for GLP1 + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to GLP1 + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.8223
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "GLP1_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for GLP1 + 8.3mM G given insulin/islet", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on insulin/islet", 
+        7.3471
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 8.3mM G given insulin/islet", 
+        "insulin secretion for 8.3mM glucose conditioned on insulin/islet", 
+        6.1346
+      ], 
+      [
+        "1_29022765", 
+        "1", 
+        29.0228, 
+        "G33_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 3.3mM G given insulin/islet", 
+        "insulin secretion for 3.3mM glucose conditioned on insulin/islet", 
+        7.0644
+      ], 
+      [
+        "1_33817812", 
+        "1", 
+        33.8178, 
+        "AA_G83_ins_secrete_gm", 
+        "insulin secretion for amino acids (AA) + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to AA + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse. 1.25mM Ala; 2mM Glu and 0.5mM Leu; plus 8.3mM glucose with units of ng/ml insulin. Computed average value of 6 sepearte measurements made for each mouse.", 
+        6.9389
+      ], 
+      [
+        "1_41651601", 
+        "1", 
+        41.6516, 
+        "PA_G167_ins_secrete_gm_adj_G167", 
+        "insulin secretion for PA + 16.7mM G given 16.7mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 16.7mM glucose", 
+        6.0361
+      ], 
+      [
+        "10_102456054", 
+        "10", 
+        102.4561, 
+        "GLP1_G83_ins_secrete_gm_adj_G83", 
+        "insulin secretion for GLP1 + 8.3mM G given 8.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 8.3mM glucose", 
+        6.0849
+      ], 
+      [
+        "10_128351313", 
+        "10", 
+        128.3513, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.0172
+      ], 
+      [
+        "11_101917612", 
+        "11", 
+        101.9176, 
+        "GLP1_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for GLP1 + 8.3mM G given insulin/islet", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on insulin/islet", 
+        6.4499
+      ], 
+      [
+        "11_101917612", 
+        "11", 
+        101.9176, 
+        "GLP1_G83_ins_secrete_gm", 
+        "insulin secretion for GLP1 + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to GLP1 + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.2522
+      ], 
+      [
+        "11_105498570", 
+        "11", 
+        105.4986, 
+        "AA_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for AA + 8.3mM G given insulin/islet", 
+        "insulin secretion for AA + 8.3mM glucose conditioned on insulin/islet", 
+        6.7866
+      ], 
+      [
+        "12_73601827", 
+        "12", 
+        73.6018, 
+        "Gcg_content", 
+        "glucagon/islet", 
+        "Amount of glucagon per islet in units of pg/islet.", 
+        6.9684
+      ], 
+      [
+        "12_80614951", 
+        "12", 
+        80.615, 
+        "KCl_G33_ins_secrete_gm", 
+        "insulin secretion for KCL + 3.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to KCL + 3.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.0284
+      ], 
+      [
+        "13_31072103", 
+        "13", 
+        31.0721, 
+        "Gcg_content", 
+        "glucagon/islet", 
+        "Amount of glucagon per islet in units of pg/islet.", 
+        6.6149
+      ], 
+      [
+        "14_46599914", 
+        "14", 
+        46.5999, 
+        "GLP1_G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for GLP1 + 8.3mM G given 3.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.1323
+      ], 
+      [
+        "14_46659948", 
+        "14", 
+        46.6599, 
+        "G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 16.7mM G given 3.3mM G", 
+        "insulin secretion for 16.7mM glucose conditioned on 3.3mM glucose", 
+        7.8322
+      ], 
+      [
+        "14_46748211", 
+        "14", 
+        46.7482, 
+        "G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 16.7mM G given insulin/islet", 
+        "insulin secretion for 16.7mM glucose conditioned on insulin/islet", 
+        6.1255
+      ], 
+      [
+        "14_48319169", 
+        "14", 
+        48.3192, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.2796
+      ], 
+      [
+        "14_78899036", 
+        "14", 
+        78.899, 
+        "GLP1_G83_ins_secrete_gm_adj_G83", 
+        "insulin secretion for GLP1 + 8.3mM G given 8.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 8.3mM glucose", 
+        7.0659
+      ], 
+      [
+        "16_28378813", 
+        "16", 
+        28.3788, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.5976
+      ], 
+      [
+        "17_31546686", 
+        "17", 
+        31.5467, 
+        "AA_G83_ins_secrete_gm", 
+        "insulin secretion for amino acids (AA) + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to AA + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse. 1.25mM Ala; 2mM Glu and 0.5mM Leu; plus 8.3mM glucose with units of ng/ml insulin. Computed average value of 6 sepearte measurements made for each mouse.", 
+        6.2741
+      ], 
+      [
+        "19_17168853", 
+        "19", 
+        17.1689, 
+        "G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 16.7mM G given 3.3mM G", 
+        "insulin secretion for 16.7mM glucose conditioned on 3.3mM glucose", 
+        6.8117
+      ], 
+      [
+        "19_4978110", 
+        "19", 
+        4.9781, 
+        "G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 8.3mM G given insulin/islet", 
+        "insulin secretion for 8.3mM glucose conditioned on insulin/islet", 
+        6.3145
+      ], 
+      [
+        "19_4978110", 
+        "19", 
+        4.9781, 
+        "GLP1_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for GLP1 + 8.3mM G given insulin/islet", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on insulin/islet", 
+        6.2827
+      ], 
+      [
+        "19_57715557", 
+        "19", 
+        57.7156, 
+        "Gcg_secreted", 
+        "glucagon secretion for KCL + 3.3mM G", 
+        "Ex vivo glucagon secretion (pg/ml) in response KCL + 3.3mM glucose", 
+        6.871
+      ], 
+      [
+        "19_57715557", 
+        "19", 
+        57.7156, 
+        "Gcg_secreted_adj_Gcg_content", 
+        "glucagon secretion for KCL + 3.3mM G given glucagon/islet", 
+        "Gcg secretion in response to KCL + 3.3mM glucose conditioned on glucagon/islet ", 
+        7.0321
+      ], 
+      [
+        "2_153694646", 
+        "2", 
+        153.6946, 
+        "KCl_G33_ins_secrete_gm", 
+        "insulin secretion for KCL + 3.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to KCL + 3.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.5548
+      ], 
+      [
+        "2_83826005", 
+        "2", 
+        83.826, 
+        "GLP1_G83_ins_secrete_gm_adj_G83", 
+        "insulin secretion for GLP1 + 8.3mM G given 8.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 8.3mM glucose", 
+        7.5381
+      ], 
+      [
+        "3_133561333", 
+        "3", 
+        133.5613, 
+        "G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 16.7mM G given insulin/islet", 
+        "insulin secretion for 16.7mM glucose conditioned on insulin/islet", 
+        6.0938
+      ], 
+      [
+        "3_133651296", 
+        "3", 
+        133.6513, 
+        "PA_G167_ins_secrete_gm", 
+        "insulin secretion for palmitic acid (PA) + 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to PA + 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.0569
+      ], 
+      [
+        "3_133651296", 
+        "3", 
+        133.6513, 
+        "PA_G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for PA + 16.7mM G given insulin/islet", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on insulin/islet", 
+        6.1669
+      ], 
+      [
+        "3_135232817", 
+        "3", 
+        135.2328, 
+        "G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 8.3mM G given 3.3mM G", 
+        "insulin secretion for 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.8219
+      ], 
+      [
+        "3_135518256", 
+        "3", 
+        135.5183, 
+        "GLP1_G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for GLP1 + 8.3mM G given 3.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 3.3mM glucose", 
+        8.2587
+      ], 
+      [
+        "3_135518256", 
+        "3", 
+        135.5183, 
+        "G167_ins_secrete_gm", 
+        "insulin secretion for 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.3817
+      ], 
+      [
+        "3_135518256", 
+        "3", 
+        135.5183, 
+        "PA_G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for PA + 16.7mM G given 3.3mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 3.3mM glucose", 
+        6.3163
+      ], 
+      [
+        "3_135518256", 
+        "3", 
+        135.5183, 
+        "G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 16.7mM G given 3.3mM G", 
+        "insulin secretion for 16.7mM glucose conditioned on 3.3mM glucose", 
+        7.3566
+      ], 
+      [
+        "3_136022820", 
+        "3", 
+        136.0228, 
+        "AA_G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for AA + 8.3mM G given 3.3mM G", 
+        "insulin secretion for AA + 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.727
+      ], 
+      [
+        "3_41150846", 
+        "3", 
+        41.1508, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.3472
+      ], 
+      [
+        "3_8300561", 
+        "3", 
+        8.3006, 
+        "Gcg_content", 
+        "glucagon/islet", 
+        "Amount of glucagon per islet in units of pg/islet.", 
+        6.1
+      ], 
+      [
+        "4_57178217", 
+        "4", 
+        57.1782, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.3624
+      ], 
+      [
+        "4_59736655", 
+        "4", 
+        59.7367, 
+        "Ins_per_islet", 
+        "insulin/islet", 
+        "Amount of insulin per islet in units of ng/islet.", 
+        6.5732
+      ], 
+      [
+        "5_115531307", 
+        "5", 
+        115.5313, 
+        "G167_ins_secrete_gm", 
+        "insulin secretion for 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        7.0264
+      ], 
+      [
+        "5_115531307", 
+        "5", 
+        115.5313, 
+        "G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 16.7mM G given insulin/islet", 
+        "insulin secretion for 16.7mM glucose conditioned on insulin/islet", 
+        7.6917
+      ], 
+      [
+        "7_67151798", 
+        "7", 
+        67.1518, 
+        "PA_G167_ins_secrete_gm_adj_G167", 
+        "insulin secretion for PA + 16.7mM G given 16.7mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 16.7mM glucose", 
+        6.5404
+      ], 
+      [
+        "8_113183803", 
+        "8", 
+        113.1838, 
+        "AA_G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for AA + 8.3mM G given 3.3mM G", 
+        "insulin secretion for AA + 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.8092
+      ], 
+      [
+        "8_117753129", 
+        "8", 
+        117.7531, 
+        "GLP1_G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for GLP1 + 8.3mM G given 3.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.2974
+      ], 
+      [
+        "8_24010114", 
+        "8", 
+        24.0101, 
+        "G167_ins_secrete_gm", 
+        "insulin secretion for 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.0581
+      ], 
+      [
+        "9_60073167", 
+        "9", 
+        60.0732, 
+        "G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 16.7mM G given 3.3mM G", 
+        "insulin secretion for 16.7mM glucose conditioned on 3.3mM glucose", 
+        6.2313
+      ], 
+      [
+        "9_65546784", 
+        "9", 
+        65.5468, 
+        "PA_G167_ins_secrete_gm_adj_G33", 
+        "insulin secretion for PA + 16.7mM G given 3.3mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 3.3mM glucose", 
+        6.3455
+      ], 
+      [
+        "9_65878509", 
+        "9", 
+        65.8785, 
+        "GLP1_G83_ins_secrete_gm_adj_G83", 
+        "insulin secretion for GLP1 + 8.3mM G given 8.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 8.3mM glucose", 
+        6.2053
+      ], 
+      [
+        "9_66291475", 
+        "9", 
+        66.2915, 
+        "PA_G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for PA + 16.7mM G given insulin/islet", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on insulin/islet", 
+        7.712
+      ], 
+      [
+        "9_66640538", 
+        "9", 
+        66.6405, 
+        "PA_G167_ins_secrete_gm", 
+        "insulin secretion for palmitic acid (PA) + 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to PA + 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        7.6216
+      ], 
+      [
+        "9_66767258", 
+        "9", 
+        66.7673, 
+        "G167_ins_secrete_gm", 
+        "insulin secretion for 16.7mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 16.7mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.1119
+      ], 
+      [
+        "9_67721429", 
+        "9", 
+        67.7214, 
+        "G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 16.7mM G given insulin/islet", 
+        "insulin secretion for 16.7mM glucose conditioned on insulin/islet", 
+        6.0811
+      ]
+    ], 
+    "sex": [
+      [
+        "1_58800793", 
+        "1", 
+        58.8008, 
+        "PA_G167_ins_secrete_gm_adj_G167", 
+        "insulin secretion for PA + 16.7mM G given 16.7mM G", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on 16.7mM glucose", 
+        6.0131
+      ], 
+      [
+        "10_18052509", 
+        "10", 
+        18.0525, 
+        "PA_G167_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for PA + 16.7mM G given insulin/islet", 
+        "insulin secretion for PA + 16.7mM glucose conditioned on insulin/islet", 
+        6.1053
+      ], 
+      [
+        "11_69829176", 
+        "11", 
+        69.8292, 
+        "G33_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 3.3mM G given insulin/islet", 
+        "insulin secretion for 3.3mM glucose conditioned on insulin/islet", 
+        6.3562
+      ], 
+      [
+        "11_97709598", 
+        "11", 
+        97.7096, 
+        "GLP1_G83_ins_secrete_gm", 
+        "insulin secretion for GLP1 + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to GLP1 + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        7.1101
+      ], 
+      [
+        "11_97709598", 
+        "11", 
+        97.7096, 
+        "AA_G83_ins_secrete_gm", 
+        "insulin secretion for amino acids (AA) + 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to AA + 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse. 1.25mM Ala; 2mM Glu and 0.5mM Leu; plus 8.3mM glucose with units of ng/ml insulin. Computed average value of 6 sepearte measurements made for each mouse.", 
+        6.3278
+      ], 
+      [
+        "11_97709598", 
+        "11", 
+        97.7096, 
+        "GLP1_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for GLP1 + 8.3mM G given insulin/islet", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on insulin/islet", 
+        7.2098
+      ], 
+      [
+        "11_97910274", 
+        "11", 
+        97.9103, 
+        "G83_ins_secrete_gm", 
+        "insulin secretion for 8.3mM G", 
+        "Ex vivo insulin secretion (ng/ml) in response to 8.3mM glucose. Computed geometric mean of 6 sepearte measurements made for each mouse.", 
+        6.6556
+      ], 
+      [
+        "11_97910274", 
+        "11", 
+        97.9103, 
+        "AA_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for AA + 8.3mM G given insulin/islet", 
+        "insulin secretion for AA + 8.3mM glucose conditioned on insulin/islet", 
+        6.4458
+      ], 
+      [
+        "11_97910274", 
+        "11", 
+        97.9103, 
+        "G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 8.3mM G given insulin/islet", 
+        "insulin secretion for 8.3mM glucose conditioned on insulin/islet", 
+        6.7429
+      ], 
+      [
+        "17_17260396", 
+        "17", 
+        17.2604, 
+        "Gcg_secreted_adj_Gcg_content", 
+        "glucagon secretion for KCL + 3.3mM G given glucagon/islet", 
+        "Gcg secretion in response to KCL + 3.3mM glucose conditioned on glucagon/islet ", 
+        6.4624
+      ], 
+      [
+        "17_64971773", 
+        "17", 
+        64.9718, 
+        "num_islets", 
+        "number of islets/mouse", 
+        "Total number of islets harvested per mouse.", 
+        6.3764
+      ], 
+      [
+        "17_82305305", 
+        "17", 
+        82.3053, 
+        "Gcg_content", 
+        "glucagon/islet", 
+        "Amount of glucagon per islet in units of pg/islet.", 
+        6.0867
+      ], 
+      [
+        "19_17004965", 
+        "19", 
+        17.005, 
+        "KCl_G33_ins_secrete_gm_adj_G33", 
+        "insulin secretion for KCL + 3.3mM G given 3.3mM G", 
+        "insulin secretion for KCL + 3.3mM glucose conditioned on 3.3mM glucose", 
+        6.6813
+      ], 
+      [
+        "19_5291183", 
+        "19", 
+        5.2912, 
+        "G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for 8.3mM G given insulin/islet", 
+        "insulin secretion for 8.3mM glucose conditioned on insulin/islet", 
+        6.0696
+      ], 
+      [
+        "19_5860626", 
+        "19", 
+        5.8606, 
+        "GLP1_G83_ins_secrete_gm_adj_IPI", 
+        "insulin secretion for GLP1 + 8.3mM G given insulin/islet", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on insulin/islet", 
+        6.6888
+      ], 
+      [
+        "3_141734549", 
+        "3", 
+        141.7345, 
+        "GLP1_G83_ins_secrete_gm_adj_G83", 
+        "insulin secretion for GLP1 + 8.3mM G given 8.3mM G", 
+        "insulin secretion for GLP1 + 8.3mM glucose conditioned on 8.3mM glucose", 
+        6.4895
+      ], 
+      [
+        "6_142864294", 
+        "6", 
+        142.8643, 
+        "G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 8.3mM G given 3.3mM G", 
+        "insulin secretion for 8.3mM glucose conditioned on 3.3mM glucose", 
+        7.033
+      ], 
+      [
+        "6_99830068", 
+        "6", 
+        99.8301, 
+        "Gcg_content", 
+        "glucagon/islet", 
+        "Amount of glucagon per islet in units of pg/islet.", 
+        6.431
+      ], 
+      [
+        "7_40441446", 
+        "7", 
+        40.4414, 
+        "G83_ins_secrete_gm_adj_G33", 
+        "insulin secretion for 8.3mM G given 3.3mM G", 
+        "insulin secretion for 8.3mM glucose conditioned on 3.3mM glucose", 
+        6.7199
+      ]
+    ]
+  }, 
+  "time": 0.123
+}
