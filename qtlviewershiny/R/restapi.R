@@ -144,11 +144,11 @@ http_get_lodscan <- function(request, response) {
         }
 
 
-        lod <- l  # load(file = "data/lod_test.RData")
-#        lod <- get_lod_scan(dataset  = dataset,
-#                            id       = id,
-#                            intcovar = intcovar,
-#                            cores    = cores)
+#        lod <- l  # load(file = "data/lod_test.RData")
+        lod <- get_lod_scan(dataset  = dataset,
+                            id       = id,
+                            intcovar = intcovar,
+                            cores    = cores)
 
         if (!(to_boolean(expand))) {
             # by converting to data.frame and setting column names to NULL,
