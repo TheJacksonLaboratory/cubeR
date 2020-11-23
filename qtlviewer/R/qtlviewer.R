@@ -10,7 +10,7 @@ library(jsonlite)
 
 qtlviewer <- function(title, data_api_url = NULL, width = NULL, height = NULL, elementId = NULL) {
 
-  file <- system.file("extdata", "widget.html", package = "qtlviewerwidget")
+  file <- system.file("extdata", "widget.html", package = "qtlviewer")
 
   widget_html = paste(readLines(file, warn=FALSE, skipNul=TRUE), collapse="\n")
 
