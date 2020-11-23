@@ -6,6 +6,7 @@
 install.packages("devtools")
 library("devtools")
 devtools::install_github("TheJacksonLaboratory/cubeR/cube")
+devtools::install_github("TheJacksonLaboratory/cubeR/qtlviewerwidget")
 library(cube)
 ```
 

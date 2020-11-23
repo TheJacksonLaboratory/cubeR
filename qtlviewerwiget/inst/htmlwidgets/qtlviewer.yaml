@@ -1,0 +1,40 @@
+dependencies:
+  - name: qtlviewer
+    version: 0.0.1
+    src: "htmlwidgets/lib/static/js"
+    script:
+      - jquery-3.4.0.min.js
+      - popper.min.js
+      - bootstrap.min.js
+      - please-wait.js
+      - bootstrap-select.min.js
+      - ensimpl.js
+      - highstock.js
+      - highcharts-more.js
+      - xrange.js
+      - boost.js
+      - exporting.js
+      - offline-exporting.js
+      - jquery.dataTables.min.js
+      - dataTables.bootstrap4.min.js
+      - d3.v3.min.js
+      - d3-queue.v3.min.js
+      - d3-request.v1.min.js
+      - sweetalert2.all.js
+      - jquery.dynatable.js
+      - bootstrap-multiselect.js
+      - qtweb.js
+      - datasets.js
+      - utilities.js
+      - message.js
+      - qtl.js
+    stylesheet:
+      - bootstrap.min.css
+      - animate.min.css
+      - bootstrap-select.min.css
+      - jquery.dataTables.min.css
+      - dataTables.bootstrap4.min.css
+      - please-wait.css
+      - jquery.dynatable.css
+      - bootstrap-multiselect.css
+      - main.css
