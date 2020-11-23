@@ -10,7 +10,9 @@ library(jsonlite)
 
 qtlviewer <- function(title, data_api_url = NULL, width = NULL, height = NULL, elementId = NULL) {
 
-  widget_html = paste(readLines("widget.html", warn=FALSE, skipNul=TRUE), collapse="\n")
+  file <- system.file("widget.html", package = "qtlviewerwidget")
+
+  widget_html = paste(readLines(file, warn=FALSE, skipNul=TRUE), collapse="\n")
 
 #  chromosomes <- jsonlite::read_json(path ="data-raw/chromosomes.json")
 #  correlation <- jsonlite::read_json(path ="data-raw/correlation.json")
