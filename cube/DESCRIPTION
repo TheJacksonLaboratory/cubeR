@@ -18,10 +18,10 @@ Suggests:
     knitr (>= 1.29), 
     rmarkdown    
 Imports:
-    devtools,
     here,
     jsonlite,
     httr,
     logger,
     R6 (>= 2.4.1),
+    RPostgreSQL,
     stringr (>= 1.4.0)
