@@ -2420,7 +2420,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateSNPAssocData: ', groupID);
 
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3117,7 +3117,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateMediationData{} ', groupID);
 
         if (g.runningTask) {
-		    let statusURL = 'static/js/status.js';
+		    let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3249,7 +3249,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateEffectData() ', groupID);
 
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3329,7 +3329,7 @@ function syncronizeCrossHairs(chart) {
         logDebug(groupID);
 
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5061,7 +5061,7 @@ cccc
         logDebug(currentDataset, currentID, correlateDataset, correlateID, correlateSymbol);
 
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5206,7 +5206,7 @@ cccc
 
         logDebug(groupID);
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5474,7 +5474,7 @@ CCCC
         logDebug(groupID);
 
         if (g.runningTask) {
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5834,7 +5834,7 @@ CCCC
 
         if (g.runningTask) {
 //            let statusURL = `/api/status/${groupID}`;
-            let statusURL = 'static/js/status.js';
+            let statusURL = 'http://ctlin0039.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
