@@ -1,8 +1,8 @@
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=xxxxx
-DB_USER=xxxxx
-DB_PASS=xxxxx
+DB_NAME=biodata
+DB_USER=msdbadminrprod
+DB_PASS=mRx%*r$5&2
 
 # production
 #CUBE_APP_API_URL_BASE=https://metadata-service-prod.azurewebsites.net

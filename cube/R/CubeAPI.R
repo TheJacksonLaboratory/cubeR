@@ -26,6 +26,8 @@ CubeAPI <- R6::R6Class(
     .endpoint_element_instance = "metadata_repository/element_instance",
     .endpoint_disclaimer = "cube_about/disclaimer/"
   ),
+
+
   public = list(
     #' @field cube web app API base
     url_base = NULL,
