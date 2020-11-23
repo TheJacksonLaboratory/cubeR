@@ -15,7 +15,7 @@ HTMLWidgets.widget({
 
         el.innerHTML = x.widget_html;
 
-        init(x.data_api_url);
+       // init(x.data_api_url);
 
       },
 
