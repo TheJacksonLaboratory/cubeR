@@ -57,25 +57,25 @@ Auth0DeviceAuth <- R6::R6Class(
       # if no argument passed, use the environment variables
       # auth0 tenant url
       if (missing(tenant_url))
-        private$.tenant_url = Sys.getenv("AUTH0_TENANT_URL")
+        private$.tenant_url = "thejacksonlaboratory.auth0.com"
       else
         private$.tenant_url = tenant_url
 
       # auth0 client id
       if (missing(client_id))
-        private$.client_id = Sys.getenv("AUTH0_CLIENT_ID")
+        private$.client_id = "sE1muLJOxWHw9Ajed3biEngd1zOi7cOM"
       else
         private$.client_id = client_id
 
       # auth0 scopes
       if (missing(scopes))
-        private$.scopes = Sys.getenv("AUTH0_SCOPES")
+        private$.scopes = "profile email"
       else
         private$.scopes = scopes
 
       # auth0 audience
       if (missing(audience))
-        private$.audience = Sys.getenv("AUTH0_AUDIENCE")
+        private$.audience = "https://cube.jax.org"
       else
         private$.audience = tenant_url
     },

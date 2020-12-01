@@ -48,7 +48,7 @@ CubeAPI <- R6::R6Class(
       url_base = NULL
     ) {
       if (missing(url_base))
-        self$url_base = Sys.getenv("CUBE_APP_API_URL_BASE")
+        self$url_base = "https://metadata-service-sqa.azurewebsites.net/"
       else
         self$url_base = url_base
       log_debug(self$url_base)
