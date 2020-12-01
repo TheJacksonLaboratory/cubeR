@@ -15,7 +15,7 @@ Class \code{database} defines a database object.
 \section{Slots}{
 
 \describe{
-\item{\code{parameter_file}}{string, full path to YAML file with initialization
+\item{\code{host}}{character, database host
 parameters}
 }}
 
@@ -123,13 +123,13 @@ data.frame query_results
 get_column_info method.
 This is a function to get metadata column names
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Database$get_column_info(dataset_id)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Database$get_column_info(element_id)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{dataset_id}}{integer}
+\item{\code{element_id}}{integer, element id}
 }
 \if{html}{\out{</div>}}
 }

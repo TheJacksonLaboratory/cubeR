@@ -15,18 +15,9 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
 \describe{
-\item{\code{.token}}{api call token}
+\item{\code{url_base}}{character, cube web app API base}
 
-\item{\code{cube}}{web app API base}
-}
-\if{html}{\out{</div>}}
-}
-\section{Active bindings}{
-\if{html}{\out{<div class="r6-active-bindings">}}
-\describe{
-\item{\code{.token}}{api call token}
-
-\item{\code{cube}}{web app API base}
+\item{\code{auth0_obj}}{\code{Auth0DeviceAuth} an instance of Auth0DeviceAuth}
 }
 \if{html}{\out{</div>}}
 }
@@ -34,8 +25,11 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-new}{\code{CubeAPI$new()}}
-\item \href{#method-get}{\code{CubeAPI$get()}}
+\item \href{#method-login}{\code{CubeAPI$login()}}
 \item \href{#method-get_element_instance}{\code{CubeAPI$get_element_instance()}}
+\item \href{#method-get_element_instance_json}{\code{CubeAPI$get_element_instance_json()}}
+\item \href{#method-get_end_point}{\code{CubeAPI$get_end_point()}}
+\item \href{#method-get}{\code{CubeAPI$get()}}
 \item \href{#method-get_disclaimer}{\code{CubeAPI$get_disclaimer()}}
 \item \href{#method-get_disclaimer_json}{\code{CubeAPI$get_disclaimer_json()}}
 \item \href{#method-finalize}{\code{CubeAPI$finalize()}}
@@ -46,6 +40,12 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \if{html}{\out{<a id="method-new"></a>}}
 \if{latex}{\out{\hypertarget{method-new}{}}}
 \subsection{Method \code{new()}}{
+private fields
+
+
+public fields
+
+
 Initialization method.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CubeAPI$new(url_base = NULL)}\if{html}{\out{</div>}}
@@ -54,33 +54,23 @@ Initialization method.
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{url_base}}{cube web app API base}
+\item{\code{url_base}}{character, cube web app API base, if not existing, take
+from environmental variable}
 }
 \if{html}{\out{</div>}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get"></a>}}
-\if{latex}{\out{\hypertarget{method-get}{}}}
-\subsection{Method \code{get()}}{
-get method.
+\if{html}{\out{<a id="method-login"></a>}}
+\if{latex}{\out{\hypertarget{method-login}{}}}
+\subsection{Method \code{login()}}{
+login, call this method to login auth0
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get(endpoint, limit = 0)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$login()}\if{html}{\out{</div>}}
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{a get endpoint to call
-required}
-
-\item{\code{limit}}{max number of data returned}
-}
-\if{html}{\out{</div>}}
-}
 \subsection{Returns}{
-Response \code{httr::Response}
-https://httr.r-lib.org
+character verification_uri and user_code
 }
 }
 \if{html}{\out{<hr>}}
@@ -89,18 +79,121 @@ https://httr.r-lib.org
 \subsection{Method \code{get_element_instance()}}{
 get_element_instance method.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element_instance(limit = 100)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element_instance(
+  element_id = NULL,
+  accession_ids = NULL,
+  page = 1,
+  page_size = 100
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{limit}}{max number of data returned}
+\item{\code{element_id}}{integer, element id}
+
+\item{\code{accession_ids}}{vector of characters, accession ids}
+
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
 }
 \if{html}{\out{</div>}}
 }
 \subsection{Returns}{
 Response \code{httr::Response}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_element_instance_json"></a>}}
+\if{latex}{\out{\hypertarget{method-get_element_instance_json}{}}}
+\subsection{Method \code{get_element_instance_json()}}{
+get_element_instance_json method.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element_instance_json(
+  element_id = NULL,
+  accession_ids = NULL,
+  page = 1,
+  page_size = 100
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{element_id}}{integer, element id}
+
+\item{\code{accession_ids}}{vector of characters. accession ids}
+
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+json
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_end_point"></a>}}
+\if{latex}{\out{\hypertarget{method-get_end_point}{}}}
+\subsection{Method \code{get_end_point()}}{
+get_end_point method. get data by calling a end point
+eg: "metadata_repository/element_instance"
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_end_point(
+  end_point,
+  element_id = NULL,
+  accession_ids = NULL,
+  page = 1,
+  page_size = 100
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{end_point}}{character,  API end point to call,
+required}
+
+\item{\code{element_id}}{integer, element id}
+
+\item{\code{accession_ids}}{vector of characters, accession ids}
+
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get"></a>}}
+\if{latex}{\out{\hypertarget{method-get}{}}}
+\subsection{Method \code{get()}}{
+get method. get a url and return a response from
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get(url, query = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{url}}{character, a url to call
+required}
+
+\item{\code{query}}{character, a key value list
+for example: query = list(element_id = "85", accession_id = \link{"", ""})}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}
+https://httr.r-lib.org
 }
 }
 \if{html}{\out{<hr>}}

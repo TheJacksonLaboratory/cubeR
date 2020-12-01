@@ -2,16 +2,14 @@ library(RPostgreSQL)
 
 #' Database
 #'
-#'
 #' Class \code{database} defines a database object.
 #'
 #' @name Database-class
 #' @rdname Database-class
 #' @exportClass Database
 #'
-#' @slot parameter_file string, full path to YAML file with initialization
+#' @slot host character, database host
 #'   parameters
-#'
 #'
 #' @export
 Database <- R6::R6Class(
@@ -55,13 +53,13 @@ Database <- R6::R6Class(
       user = NULL,
       password = NULL
     ) {
-      if (missing(host)) self$host <- Sys.getenv("DB_HOST")
-      if (missing(port)) self$port <- Sys.getenv("DB_PORT")
-      if (missing(dbname)) self$dbname <- Sys.getenv("DB_NAME")
-      if (missing(user)) self$user <- Sys.getenv("DB_USER")
-      if (missing(password)) self$password <- Sys.getenv("DB_PASS")
+      if (missing(host)) self$host = Sys.getenv("DB_HOST")
+      if (missing(port)) self$port = Sys.getenv("DB_PORT")
+      if (missing(dbname)) self$dbname = Sys.getenv("DB_NAME")
+      if (missing(user)) self$user = Sys.getenv("DB_USER")
+      if (missing(password)) self$password = Sys.getenv("DB_PASS")
 
-      private$.conn <- RPostgreSQL::dbConnect(
+      private$.conn = RPostgreSQL::dbConnect(
                         drv = RPostgreSQL::PostgreSQL(),
                         host=self$host,
                         port=self$port,
@@ -77,7 +75,7 @@ Database <- R6::R6Class(
     #'
     #' @return data.frame query_results
     select = function(query) {
-      query_results <- RPostgreSQL::dbGetQuery(private$.conn, query)
+      query_results = RPostgreSQL::dbGetQuery(private$.conn, query)
       query_results
     },
 
@@ -86,24 +84,24 @@ Database <- R6::R6Class(
     #' This is a test function database connection and query
     #' @return data.frame query_results
     test = function() {
-      query <- "SELECT * from public.metadata_definition_element limit 5"
-      results <- self$select(query);
+      query = "SELECT * from public.metadata_definition_element limit 5"
+      results = self$select(query);
       results
     },
 
     #' @description
     #' get_column_info method.
     #' This is a function to get metadata column names
-    #' @param dataset_id integer
+    #' @param element_id integer, element id
     #'
     #' @return data.frame of two columns, column name and data type
-    get_column_info = function(dataset_id) {
-      query <- paste("SELECT property_label, data_type
+    get_column_info = function(element_id) {
+      query = paste("SELECT property_label, data_type
           FROM metadata_definition_property p
-          WHERE element_id=", dataset_id,
+          WHERE element_id=", element_id,
           "AND include_in_summary = 'true'",
           "ORDER BY id", sep = " ")
-      results <- self$select(query)
+      results = self$select(query)
       results  # return as a vector
     },
 
