@@ -19,12 +19,7 @@ Class \code{cube} defines a Cube analysis object.
 
 \item{\code{accession_ids}}{vector of characters, accession ids
 
-Example to use this class
-cube_obj = Cube$new()
-cube_obj$login()    # call the login to get url for verificationdo the verification in a browser
-
-json = cube_obj$get_metadata_json(element_id = 116, page_size = 5)
-metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)}
+Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the login to get url for verificationdo the verification in a browserjson = cube_obj$get_metadata_json(element_id = 116, page_size = 5)metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)}
 }}
 
 \section{Public fields}{

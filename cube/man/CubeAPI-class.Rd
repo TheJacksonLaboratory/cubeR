@@ -26,10 +26,13 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \itemize{
 \item \href{#method-new}{\code{CubeAPI$new()}}
 \item \href{#method-login}{\code{CubeAPI$login()}}
+\item \href{#method-get_element}{\code{CubeAPI$get_element()}}
 \item \href{#method-get_element_instance}{\code{CubeAPI$get_element_instance()}}
 \item \href{#method-get_element_instance_json}{\code{CubeAPI$get_element_instance_json()}}
 \item \href{#method-get_end_point}{\code{CubeAPI$get_end_point()}}
-\item \href{#method-get}{\code{CubeAPI$get()}}
+\item \href{#method-post_element_instance_filter}{\code{CubeAPI$post_element_instance_filter()}}
+\item \href{#method-post_end_point}{\code{CubeAPI$post_end_point()}}
+\item \href{#method-call}{\code{CubeAPI$call()}}
 \item \href{#method-get_disclaimer}{\code{CubeAPI$get_disclaimer()}}
 \item \href{#method-get_disclaimer_json}{\code{CubeAPI$get_disclaimer_json()}}
 \item \href{#method-finalize}{\code{CubeAPI$finalize()}}
@@ -71,6 +74,19 @@ login, call this method to login auth0
 
 \subsection{Returns}{
 character verification_uri and user_code
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_element"></a>}}
+\if{latex}{\out{\hypertarget{method-get_element}{}}}
+\subsection{Method \code{get_element()}}{
+get_element
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+Response \code{httr::Response}  http response
 }
 }
 \if{html}{\out{<hr>}}
@@ -172,22 +188,119 @@ Response \code{httr::Response}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get"></a>}}
-\if{latex}{\out{\hypertarget{method-get}{}}}
-\subsection{Method \code{get()}}{
-get method. get a url and return a response from
+\if{html}{\out{<a id="method-post_element_instance_filter"></a>}}
+\if{latex}{\out{\hypertarget{method-post_element_instance_filter}{}}}
+\subsection{Method \code{post_element_instance_filter()}}{
+post_element_instance_filter method. post call instance with filter
+Action end point used for retrieving data based on a filter
+The filter is passed in the request body, with the following format:
+elementId: number;
+parentElementInstanceId: number;
+accessionId: string;
+propertyFilters: \link[=
+     propertyId: number;
+     dataType: string;
+     propertyValue: string;
+   ]{ propertyId: number; dataType: string; propertyValue: string; }
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get(url, query = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$post_element_instance_filter(
+  element_id = NULL,
+  parent_element_instance_id = NULL,
+  accession_ids = NULL,
+  page = 1,
+  page_size = 100
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
+\item{\code{element_id}}{integer, element id}
+
+\item{\code{parent_element_instance_id}}{integer, parent element instance id}
+
+\item{\code{accession_ids}}{vector of characters, accession ids}
+
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-post_end_point"></a>}}
+\if{latex}{\out{\hypertarget{method-post_end_point}{}}}
+\subsection{Method \code{post_end_point()}}{
+post_end_point method. post to a end point
+eg: "metadata_repository/element_instance/filter"
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$post_end_point(
+  end_point,
+  element_id = NULL,
+  parent_element_instance_id = NULL,
+  accession_ids = NULL,
+  property_filters = NULL,
+  page = 1,
+  page_size = 100
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{end_point}}{character,  API end point to call,
+required}
+
+\item{\code{element_id}}{integer, element id}
+
+\item{\code{parent_element_instance_id}}{integer, parent element instance id}
+
+\item{\code{accession_ids}}{vector of characters, accession ids}
+
+\item{\code{property_filters}}{vector of property filters in format
+propertyFilters: \link[=
+     propertyId: number;
+     dataType: string;
+     propertyValue: string;
+   ]{ propertyId: number; dataType: string; propertyValue: string; }}
+
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-call"></a>}}
+\if{latex}{\out{\hypertarget{method-call}{}}}
+\subsection{Method \code{call()}}{
+call method. call url and return a response, based on the method provided
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$call(method, url, query = NULL, body = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{method}}{integer, a number to indicate which method to use
+defined in constants.R
+required}
+
 \item{\code{url}}{character, a url to call
 required}
 
 \item{\code{query}}{character, a key value list
 for example: query = list(element_id = "85", accession_id = \link{"", ""})}
+
+\item{\code{body}}{list, post body}
 }
 \if{html}{\out{</div>}}
 }

@@ -14,11 +14,11 @@ log_threshold(DEBUG)
 #' @slot accession_ids vector of characters, accession ids
 #'
 #' Example to use this class
-#'   cube_obj = Cube$new()
-#'   cube_obj$login()    # call the login to get url for verification
+#'   > cube_obj = Cube$new()
+#'   > cube_obj$login()    # call the login to get url for verification
 #'   # do the verification in a browser
-#'   json = cube_obj$get_metadata_json(element_id = 116, page_size = 5)
-#'   metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)
+#'   > json = cube_obj$get_metadata_json(element_id = 116, page_size = 5)
+#'   > metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)
 #'
 #' @export
 Cube = R6::R6Class(
@@ -218,7 +218,7 @@ Cube = R6::R6Class(
     #' @return Response \code{httr::Response}  http response
     get_element = function(
     ) {
-      response = self$cubeapi$get_end_point("metadata_definition/element")
+      response = self$cubeapi$get_element()
     },
 
     #' @description

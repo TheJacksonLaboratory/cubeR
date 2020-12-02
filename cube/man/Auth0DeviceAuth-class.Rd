@@ -24,6 +24,8 @@ Class \code{Auth0DeviceAuth} defines a Auth0DeviceAuth object to interact with C
 \item{\code{device_code}}{character, device code}
 
 \item{\code{access_token}}{character access_token}
+
+\item{\code{expires_in}}{character access_token expire}
 }
 \if{html}{\out{</div>}}
 }

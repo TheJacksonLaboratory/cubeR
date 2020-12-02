@@ -10,20 +10,19 @@ for (f in list.files(pkg_path)) {
 cube_obj <- Cube$new()
 
 test_that("test get_metadata ", {
-  metadata <- cube_obj$get_metadata(element_id = 122, page_size = 5)
-  expect_equal(5, nrow(metadata))
+  response <- cube_obj$get_metadata(element_id = 122, page_size = 5)
+  expect_equal(200, response$status_code)
 })
 
 
 test_that("test get_metadata_pivot ", {
-  metadata <- cube_obj$get_metadata(element_id = 122, page_size = 2,
-                                    is_pivot = TRUE)
-  expect_equal(2, nrow(metadata))
+  response <- cube_obj$get_metadata(element_id = 122, page_size = 2)
+  expect_equal(200, response$status_code)
 })
 
 test_that("test accession id filter ", {
-  metadata <- cube_obj$get_metadata(element_id = 122, page_size = 10,
-            accession_ids = c("JAXAS0005k", "JAXAS0005J"))
-  expect_equal(10, nrow(metadata))
+  response <- cube_obj$get_metadata(element_id = 122, page_size = 10,
+            accession_ids = "JAXAS0005k")
+  expect_equal(200, response$status_code)
 })
 

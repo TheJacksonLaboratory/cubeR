@@ -11,8 +11,7 @@ for (f in list.files(pkg_path)) {
 auth0 = Auth0DeviceAuth$new()
 
 test_that("test get_device_code, get_access_token", {
-  response = auth0$get_device_code()
-
+  content = auth0$get_device_code()
   verification_uri = content[["verification_uri"]]
   device_code = content[["device_code"]]
   user_code = content[["user_code"]]
@@ -23,8 +22,9 @@ test_that("test get_device_code, get_access_token", {
 
 
   access_token = auth0$get_access_token()
-
   log_debug(paste("access_token", access_token, sep = ": "))
+
+  expect_equal(9, str_length(user_code))
 
 })
 
