@@ -51,9 +51,6 @@ CubeAPI <- R6::R6Class(
       log_debug(self$url_base)
 
       self$auth0_obj = Auth0DeviceAuth$new()
-
-      # set access_token in environment variable if exists for testing purpose
-      self$auth0_obj$access_token = Sys.getenv("TEST_ACCESS_TOKEN")
     },
 
     #' @description
@@ -151,7 +148,7 @@ CubeAPI <- R6::R6Class(
     #'      propertyId: number;
     #'      dataType: string;
     #'      propertyValue: string;
-    #'    ]
+    #'
     #'
     #' @param element_id integer, element id
     #' @param parent_element_instance_id integer, parent element instance id
@@ -184,7 +181,7 @@ CubeAPI <- R6::R6Class(
     #'      propertyId: number;
     #'      dataType: string;
     #'      propertyValue: string;
-    #'    ]
+    #'
     #' @param page integer, page number
     #' @param page_size integer, number of items per page
     #'
@@ -198,7 +195,7 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      url = paste0(self$url_base, end_point);
+      url = paste0(self$url_base, end_point)
 
       query = list(page = page,
                    page_size = page_size)
@@ -221,7 +218,7 @@ CubeAPI <- R6::R6Class(
     #' @param url character, a url to call
     #'  required
     #' @param query character, a key value list
-    #'  for example: query = list(element_id = "85", accession_id = ["", ""])
+    #'  for example: query = list(element_id = "85", accession_id = "JAXAS0005k")
     #'
     #' @param body list, post body
     #'
@@ -233,7 +230,7 @@ CubeAPI <- R6::R6Class(
                     body = NULL) {
 
       # get access token. if is not here, get it on fly
-      if ( is.null(self$auth0_obj$access_token) ) {
+      if ( str_length(self$auth0_obj$access_token) < 1) {
 
         # check if device_code exisit, if not, stop and ask user to run login first
         if ( is.null(self$auth0_obj$device_code) ) {
@@ -241,12 +238,12 @@ CubeAPI <- R6::R6Class(
              it in a browser")
         }
 
-        log_debug("call auth0_obj$get_access_token()")
         self$auth0_obj$get_access_token()
+
       }
 
       # if no access token, stop here
-      if ( is.null(self$auth0_obj$access_token) )
+      if ( str_length(self$auth0_obj$access_token) < 1)
         stop( paste0("Validation error: Please open the validate URL in the the browser: ",
                     self$auth0_obj$verification_uri_complete))
 
@@ -264,7 +261,7 @@ CubeAPI <- R6::R6Class(
           "Content-Type"  = "application/json"))
       }
 
-      log_debug(paste0("status_code: ", response$status_code))
+      log_info(paste0("status_code: ", response$status_code))
       response
     },
 

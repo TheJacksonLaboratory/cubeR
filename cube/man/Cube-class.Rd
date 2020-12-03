@@ -37,6 +37,7 @@ Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the log
 \subsection{Public methods}{
 \itemize{
 \item \href{#method-new}{\code{Cube$new()}}
+\item \href{#method-get_version}{\code{Cube$get_version()}}
 \item \href{#method-login}{\code{Cube$login()}}
 \item \href{#method-get_metadata_json}{\code{Cube$get_metadata_json()}}
 \item \href{#method-get_metadata}{\code{Cube$get_metadata()}}
@@ -71,6 +72,19 @@ Initialization method.
 \item{\code{accession_ids}}{vector of characters, accession ids}
 }
 \if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_version"></a>}}
+\if{latex}{\out{\hypertarget{method-get_version}{}}}
+\subsection{Method \code{get_version()}}{
+get_version, get version information
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_version()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+character, version information
 }
 }
 \if{html}{\out{<hr>}}

@@ -49,6 +49,9 @@ Cube = R6::R6Class(
       element_id = NULL,
       accession_ids = NULL
     ) {
+
+      log_info(paste("Version", get_version(), sep = ": "))
+
       self$element_id = element_id
       self$accession_ids = accession_ids
 
@@ -57,6 +60,14 @@ Cube = R6::R6Class(
       # just keep it for now
       # private$.database_obj = Database$new()
 
+    },
+
+    #' @description
+    #' get_version, get version information
+    #'
+    #' @return character, version information
+    get_version = function() {
+      CUBE_VERSION
     },
 
     #' @description

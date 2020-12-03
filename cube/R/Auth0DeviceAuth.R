@@ -97,6 +97,9 @@ Auth0DeviceAuth <- R6::R6Class(
         private$.audience = Sys.getenv("AUTH0_AUDIENCE")
       else
         private$.audience = tenant_url
+
+      # set access_token in environment variable if exists for testing purpose
+      self$access_token = Sys.getenv("TEST_ACCESS_TOKEN")
     },
 
     #' @description
@@ -117,10 +120,10 @@ Auth0DeviceAuth <- R6::R6Class(
       self$user_code = content[["user_code"]]
       self$device_code = content[["device_code"]]
 
-      log_info(paste("verification_uri", self$verification_uri, sep = ": "))
       log_info(paste("verification_uri_complete", self$verification_uri_complete, sep = ": "))
-      log_info(paste("user_code", self$user_code, sep = ": "))
-      log_info(paste("device_code", self$device_code, sep = ": "))
+      log_debug(paste("verification_uri", self$verification_uri, sep = ": "))
+      log_debug(paste("user_code", self$user_code, sep = ": "))
+      log_debug(paste("device_code", self$device_code, sep = ": "))
       content
     },
 
@@ -141,7 +144,8 @@ Auth0DeviceAuth <- R6::R6Class(
       content = content(response)
       self$access_token  = content[["access_token"]]
       self$expires_in  = content[["expires_in"]]
-      log_info(paste("access_token", self$access_token, sep = ": "))
+      log_debug(paste("access_token", self$access_token, sep = ": "))
+      log_info(paste("access_token length", str_length(self$access_token), sep = ": "))
       self$access_token
     },
 
