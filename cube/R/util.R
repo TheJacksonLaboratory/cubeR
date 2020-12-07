@@ -10,6 +10,8 @@
 #' @return data \code{jsonlite::fromJSON}. The data could be list or data frame
 #'   depend on the json
 #'   https://httr.r-lib.org
+#'
+#' @export
 response_json_to_data = function(
   response
 ) {
