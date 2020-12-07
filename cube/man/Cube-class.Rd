@@ -203,9 +203,16 @@ data.frame
 \subsection{Method \code{get_element()}}{
 get_element
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Cube$get_element()}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_element(element_id = NULL)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{element_id}}{integer, element id}
+}
+\if{html}{\out{</div>}}
+}
 \subsection{Returns}{
 Response \code{httr::Response}  http response
 }

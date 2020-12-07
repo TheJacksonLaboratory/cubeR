@@ -251,10 +251,10 @@ CubeAPI <- R6::R6Class(
                     body = NULL) {
 
       # get access token. if is not here, get it on fly
-      if ( str_length(self$auth0_obj$access_token) < 1) {
+      if ( is.empty(self$auth0_obj$access_token) ) {
 
         # check if device_code exisit, if not, stop and ask user to run login first
-        if ( is.null(self$auth0_obj$device_code) ) {
+        if ( is.empty(self$auth0_obj$device_code) ) {
           stop("Unauthorized, please call login to get verification URL and verify
              it in a browser")
         }
@@ -264,7 +264,7 @@ CubeAPI <- R6::R6Class(
       }
 
       # if no access token, stop here
-      if ( str_length(self$auth0_obj$access_token) < 1)
+      if ( is.empty(self$auth0_obj$access_token) )
         stop( paste0("Validation error: Please open the validate URL in the the browser: ",
                     self$auth0_obj$verification_uri_complete))
 
