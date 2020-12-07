@@ -1,6 +1,7 @@
 library(httr)
 library(jsonlite)
 library(stringr)
+library(rapportools)
 
 #' CubeAPI
 #'
@@ -64,11 +65,29 @@ CubeAPI <- R6::R6Class(
 
     #' @description
     #' get_element
+    #' @param element_id integer, element id
     #'
     #' @return Response \code{httr::Response}  http response
     get_element = function(
+      element_id = NULL
     ) {
-      response = self$get_end_point(API_END_POINT_metadata_definition_element)
+      end_point = self$append_to_path( end_point = API_END_POINT_metadata_definition_element,
+                                       path = element_id)
+      response = self$get_end_point(end_point = end_point)
+    },
+
+    #' @description
+    #' get_data_store_files
+    #' @param dir_name character, directory name
+    #'   required
+    #'
+    #' @return Response \code{httr::Response}  http response
+    get_data_store_files = function(
+      dir_name
+    ) {
+      end_point = self$append_to_path(end_point = API_END_POINT_data_store_files,
+                                      path = dir_name)
+      response = self$get_end_point(end_point = end_point)
     },
 
     #' @description
@@ -85,8 +104,11 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      self$get_end_point(API_END_POINT_metadata_repository_element_instance,
-                         element_id, accession_ids, page, page_size)
+      self$get_end_point(end_point =API_END_POINT_metadata_repository_element_instance,
+                         element_id = element_id,
+                         accession_ids = accession_ids,
+                         page = page,
+                         page_size = page_size)
     },
 
     #' @description
@@ -103,10 +125,11 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      response = self$get_element_instance(element_id, accession_ids,
-                                            page, page_size)
-      content = content(response, "text")
-      json = fromJSON(content)
+      response = self$get_element_instance( element_id = element_id,
+                                            accession_ids = accession_ids,
+                                            page = page,
+                                            page_size = page_size)
+      response_json_to_data(response)
     },
 
     #' @description
@@ -128,12 +151,15 @@ CubeAPI <- R6::R6Class(
       page_size = 100
     ) {
       url = paste0(self$url_base, end_point);
-
       query = list(element_id = element_id,
-                   accession_id = accession_ids,
                    page = page,
                    page_size = page_size)
-
+      if ( length(accession_ids) > 0 ) {
+        for (id in accession_ids) {
+          query <- c(query, accession_id=id)
+        }
+      }
+#      names(accession_ids) = rep(c("accession_id "),times=length(accession_ids))
       self$call(method = HTTP_METHOD_GET, url = url, query = query)
     },
 
@@ -151,21 +177,33 @@ CubeAPI <- R6::R6Class(
     #'
     #'
     #' @param element_id integer, element id
+    #'   required
     #' @param parent_element_instance_id integer, parent element instance id
     #' @param accession_ids vector of characters, accession ids
+    #' @param property_filters vector of characters,
     #' @param page integer, page number
     #' @param page_size integer, number of items per page
     #'
     #' @return Response \code{httr::Response}
     post_element_instance_filter = function(
-      element_id = NULL,
+      element_id,
       parent_element_instance_id = NULL,
       accession_ids = NULL,
+      property_filters = NULL,
       page = 1,
       page_size = 100
     ) {
-      self$post_end_point(API_END_POINT_metadata_repository_element_instance_filter,
-                         element_id, accession_ids, page, page_size)
+
+      body = toJSON(list(elementId = element_id,
+                         parent_element_instance_id = parent_element_instance_id,
+                         accessionId = accession_ids,
+                         propertyFilters = property_filters
+                         ), auto_unbox = TRUE)
+
+      self$post_end_point(end_point = API_END_POINT_metadata_repository_element_instance_filter,
+                          body = body,
+                          page = page,
+                          page_size = page_size)
     },
 
     #' @description
@@ -173,39 +211,22 @@ CubeAPI <- R6::R6Class(
     #'    eg: "metadata_repository/element_instance/filter"
     #' @param end_point character,  API end point to call,
     #'   required
-    #' @param element_id integer, element id
-    #' @param parent_element_instance_id integer, parent element instance id
-    #' @param accession_ids vector of characters, accession ids
-    #' @param property_filters vector of property filters in format
-    #'    propertyFilters: [
-    #'      propertyId: number;
-    #'      dataType: string;
-    #'      propertyValue: string;
-    #'
+    #' @param body character, body payload,
+    #'   required
+    #'   eg. {"elementId": 122, "propertyFilters": []}
     #' @param page integer, page number
     #' @param page_size integer, number of items per page
     #'
     #' @return Response \code{httr::Response}
     post_end_point = function(
       end_point,
-      element_id = NULL,
-      parent_element_instance_id = NULL,
-      accession_ids = NULL,
-      property_filters = NULL,
+      body,
       page = 1,
       page_size = 100
     ) {
       url = paste0(self$url_base, end_point)
-
       query = list(page = page,
                    page_size = page_size)
-
-
-      body = list(element_id = element_id,
-                  parentElementInstanceId = parent_element_instance_id,
-                  accession_id = accession_ids,
-                  propertyFilters = property_filters
-                  )
       self$call(method = HTTP_METHOD_POST, url = url, query = query, body = body)
     },
 
@@ -251,12 +272,12 @@ CubeAPI <- R6::R6Class(
       log_debug(paste(method, url, sep = ", "))
       if ( method == HTTP_METHOD_POST ) {
         # add with_verbose to debug
-        response = POST(url, query = query, body = body, httr::add_headers(
+        response = POST(url, query = query, body = body, add_headers(
           "Authorization" = paste("Bearer", self$auth0_obj$access_token, sep = " "),
           "Content-Type"  = "application/json"),
-          encode = "form")
+          encode = "json")   # either raw or json works
       } else {
-        response = GET(url, query = query, httr::add_headers(
+        response = GET(url, query = query, add_headers(
           "Authorization" = paste("Bearer", self$auth0_obj$access_token, sep = " "),
           "Content-Type"  = "application/json"))
       }
@@ -273,24 +294,25 @@ CubeAPI <- R6::R6Class(
       self$get_end_point(API_END_POINT_cube_about_disclaimer)
     },
 
-
     #' @description
-    #' get_disclaimer_json method.
+    #' append_to_path, append an id to a end point, for example
+    #'   pass in   "metadata_definition/element"    35
+    #'   to return  "metadata_definition/element/35"
+    #' @param end_point character, end point to be append
+    #'   required
+    #' @param path integer/character, to be appended
+    #'   required
     #'
-    #' @return json \code{jsonlite::json}
-    get_disclaimer_json = function() {
-      response = self$get_disclaimer()
-      content = content(response, "text")
-      json = fromJSON(content)
-
-      #result is data.frame
-      results = json$results
-
-      log_info(paste("id", results[1, "id"], sep = ": "))
-      log_info(paste("activated_date", results[1, "activated_date"], sep = ": "))
-      log_info(paste("terms_text", results[1,"terms_text"], sep = ": "))
-
-      json
+    #' @return character end point with id appended
+    append_to_path = function(
+      end_point,
+      path
+    ) {
+      ep = end_point
+      if ( !is.empty(path) ) {
+        ep = paste(ep, path, sep = "/")
+      }
+      ep
     },
 
     #' @description

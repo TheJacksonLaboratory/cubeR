@@ -3,8 +3,6 @@
 export(Auth0DeviceAuth)
 export(Cube)
 export(CubeAPI)
-export(get_metadata_query)
-export(get_metadata_query_pivot)
 exportClasses("1.")
 exportClasses("14:02:56]")
 exportClasses("14:03:51]")

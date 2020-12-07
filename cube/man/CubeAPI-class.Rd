@@ -27,6 +27,7 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \item \href{#method-new}{\code{CubeAPI$new()}}
 \item \href{#method-login}{\code{CubeAPI$login()}}
 \item \href{#method-get_element}{\code{CubeAPI$get_element()}}
+\item \href{#method-get_data_store_files}{\code{CubeAPI$get_data_store_files()}}
 \item \href{#method-get_element_instance}{\code{CubeAPI$get_element_instance()}}
 \item \href{#method-get_element_instance_json}{\code{CubeAPI$get_element_instance_json()}}
 \item \href{#method-get_end_point}{\code{CubeAPI$get_end_point()}}
@@ -34,7 +35,7 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \item \href{#method-post_end_point}{\code{CubeAPI$post_end_point()}}
 \item \href{#method-call}{\code{CubeAPI$call()}}
 \item \href{#method-get_disclaimer}{\code{CubeAPI$get_disclaimer()}}
-\item \href{#method-get_disclaimer_json}{\code{CubeAPI$get_disclaimer_json()}}
+\item \href{#method-append_to_path}{\code{CubeAPI$append_to_path()}}
 \item \href{#method-finalize}{\code{CubeAPI$finalize()}}
 \item \href{#method-print}{\code{CubeAPI$print()}}
 }
@@ -82,9 +83,37 @@ character verification_uri and user_code
 \subsection{Method \code{get_element()}}{
 get_element
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element()}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_element(element_id = NULL)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{element_id}}{integer, element id}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}  http response
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_data_store_files"></a>}}
+\if{latex}{\out{\hypertarget{method-get_data_store_files}{}}}
+\subsection{Method \code{get_data_store_files()}}{
+get_data_store_files
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_data_store_files(dir_name)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{dir_name}}{character, directory name
+required}
+}
+\if{html}{\out{</div>}}
+}
 \subsection{Returns}{
 Response \code{httr::Response}  http response
 }
@@ -203,9 +232,10 @@ dataType: string;
 propertyValue: string;
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{CubeAPI$post_element_instance_filter(
-  element_id = NULL,
+  element_id,
   parent_element_instance_id = NULL,
   accession_ids = NULL,
+  property_filters = NULL,
   page = 1,
   page_size = 100
 )}\if{html}{\out{</div>}}
@@ -214,11 +244,14 @@ propertyValue: string;
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{element_id}}{integer, element id}
+\item{\code{element_id}}{integer, element id
+required}
 
 \item{\code{parent_element_instance_id}}{integer, parent element instance id}
 
 \item{\code{accession_ids}}{vector of characters, accession ids}
+
+\item{\code{property_filters}}{vector of characters,}
 
 \item{\code{page}}{integer, page number}
 
@@ -237,15 +270,7 @@ Response \code{httr::Response}
 post_end_point method. post to a end point
 eg: "metadata_repository/element_instance/filter"
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$post_end_point(
-  end_point,
-  element_id = NULL,
-  parent_element_instance_id = NULL,
-  accession_ids = NULL,
-  property_filters = NULL,
-  page = 1,
-  page_size = 100
-)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$post_end_point(end_point, body, page = 1, page_size = 100)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -254,17 +279,9 @@ eg: "metadata_repository/element_instance/filter"
 \item{\code{end_point}}{character,  API end point to call,
 required}
 
-\item{\code{element_id}}{integer, element id}
-
-\item{\code{parent_element_instance_id}}{integer, parent element instance id}
-
-\item{\code{accession_ids}}{vector of characters, accession ids}
-
-\item{\code{property_filters}}{vector of property filters in format
-propertyFilters: [
-propertyId: number;
-dataType: string;
-propertyValue: string;}
+\item{\code{body}}{character, body payload,
+required
+eg. {"elementId": 122, "propertyFilters": []}}
 
 \item{\code{page}}{integer, page number}
 
@@ -321,16 +338,29 @@ Response \code{httr::Response}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_disclaimer_json"></a>}}
-\if{latex}{\out{\hypertarget{method-get_disclaimer_json}{}}}
-\subsection{Method \code{get_disclaimer_json()}}{
-get_disclaimer_json method.
+\if{html}{\out{<a id="method-append_to_path"></a>}}
+\if{latex}{\out{\hypertarget{method-append_to_path}{}}}
+\subsection{Method \code{append_to_path()}}{
+append_to_path, append an id to a end point, for example
+pass in   "metadata_definition/element"    35
+to return  "metadata_definition/element/35"
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_disclaimer_json()}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$append_to_path(end_point, path)}\if{html}{\out{</div>}}
 }
 
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{end_point}}{character, end point to be append
+required}
+
+\item{\code{path}}{integer/character, to be appended
+required}
+}
+\if{html}{\out{</div>}}
+}
 \subsection{Returns}{
-json \code{jsonlite::json}
+character end point with id appended
 }
 }
 \if{html}{\out{<hr>}}

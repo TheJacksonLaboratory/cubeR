@@ -107,13 +107,12 @@ Cube = R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-
       response = self$get_metadata(element_id = element_id,
                                     accession_ids = accession_ids,
                                     page = page,
                                     page_size = page_size
                                     )
-      self$to_json(response)
+      response_json_to_data(response)
     },
 
     #' @description
@@ -225,25 +224,14 @@ Cube = R6::R6Class(
 
     #' @description
     #' get_element
+    #' @param element_id integer, element id
     #'
     #' @return Response \code{httr::Response}  http response
     get_element = function(
+      element_id = NULL
     ) {
-      response = self$cubeapi$get_element()
+      response = self$cubeapi$get_element(element_id)
     },
-
-    #' @description
-    #' to_json convert a response \code{httr::Response} to json \code{jsonlite::fromJSON}
-    #' @param response \code{httr::Response} http response
-    #'
-    #' @return json \code{jsonlite::fromJSON}
-    to_json = function(
-      response
-    ) {
-      content = content(response, "text")
-      json = fromJSON(content)
-    },
-
 
     #' @description
     #' get_data, get actual data

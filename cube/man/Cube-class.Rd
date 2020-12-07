@@ -43,7 +43,6 @@ Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the log
 \item \href{#method-get_metadata}{\code{Cube$get_metadata()}}
 \item \href{#method-get_metadata_from_database}{\code{Cube$get_metadata_from_database()}}
 \item \href{#method-get_element}{\code{Cube$get_element()}}
-\item \href{#method-to_json}{\code{Cube$to_json()}}
 \item \href{#method-get_data}{\code{Cube$get_data()}}
 \item \href{#method-annotate}{\code{Cube$annotate()}}
 \item \href{#method-save_annotated_data}{\code{Cube$save_annotated_data()}}
@@ -209,26 +208,6 @@ get_element
 
 \subsection{Returns}{
 Response \code{httr::Response}  http response
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-to_json"></a>}}
-\if{latex}{\out{\hypertarget{method-to_json}{}}}
-\subsection{Method \code{to_json()}}{
-to_json convert a response \code{httr::Response} to json \code{jsonlite::fromJSON}
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Cube$to_json(response)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{response}}{\code{httr::Response} http response}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-json \code{jsonlite::fromJSON}
 }
 }
 \if{html}{\out{<hr>}}

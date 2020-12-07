@@ -20,24 +20,39 @@ test_that("test get disclaimer", {
 })
 
 test_that("test get disclaimer json ", {
-  json <- cube_api$get_disclaimer_json()
+  response = cube_api$get_disclaimer()
+  json = response_json_to_data(response)
   log_info(paste("count", json$count))
 
   expect_equal(json$count, 1)
 })
 
+test_that("test get_element with id path parameter ", {
+  response = cube_api$get_element(element_id = 122)
+  json = response_json_to_data(response)
+  expect_equal(json$id, 122)
+})
 
 test_that("test get element instance ", {
-  response <- cube_api$get_element_instance(page=1, page_size = 100)
+  response <- cube_api$get_element_instance()
 
   expect_equal(response$status_code, 200)
-  log_info(response$status_code)
-  if ( response$status_code != 200 ) {
-    log_error( paste0("Error: ", response ) )
-    stop()
-  }
-  json_data <- fromJSON(content(response, "text"))
-  # hack
-  expect_equal(3945 , json_data$count)
 })
+
+test_that("test get element instance with parameters ", {
+  response <- cube_api$get_element_instance(element_id = 122,
+                                            page_size = 2)
+
+  expect_equal(response$status_code, 200)
+})
+
+test_that("test post_element_instance_filter ", {
+  response = cube_api$post_element_instance_filter(element_id = 122,
+                                                   page = 1,
+                                                   page_size = 2)
+  expect_equal(response$status_code, 200)
+  #json = response_json_to_data(response)
+  #expect_equal(json$count, 2)
+})
+
 

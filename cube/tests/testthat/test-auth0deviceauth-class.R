@@ -20,7 +20,6 @@ test_that("test get_device_code, get_access_token", {
   log_debug(paste("device_code", device_code, sep = ": "))
   log_debug(paste("user_code", user_code, sep = ": "))
 
-
   access_token = auth0$get_access_token()
   log_debug(paste("access_token", access_token, sep = ": "))
 

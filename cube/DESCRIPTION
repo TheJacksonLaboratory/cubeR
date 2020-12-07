@@ -22,5 +22,6 @@ Imports:
     jsonlite,
     httr,
     logger,
+    rapportools,
     R6 (>= 2.4.0),
     stringr (>= 1.4.0)
