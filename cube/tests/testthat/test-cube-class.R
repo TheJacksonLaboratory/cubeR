@@ -14,6 +14,12 @@ test_that("test get all element ", {
   expect_equal(200, response$status_code)
 })
 
+test_that("test get metadata collection ", {
+  response <- cube_obj$get_metadata_collection(user = "Abigail%20Ames")
+  expect_equal(200, response$status_code)
+})
+
+
 test_that("test get element with element_id parameter ", {
   response <- cube_obj$get_element(element_id = 122)
   json = response_json_to_data(response)

@@ -77,6 +77,18 @@ CubeAPI <- R6::R6Class(
     },
 
     #' @description
+    #' get_metadata_collection  get metadata collection
+    #' @param user character, user id
+    #'
+    #' @return Response \code{httr::Response}  http response
+    get_metadata_collection = function(
+      user = NULL
+    ) {
+      ep = paste0(API_END_POINT_metadata_repository_collection, "?user=", user)
+      self$get_end_point(ep)
+    },
+
+    #' @description
     #' get_data_store_files
     #' @param dir_name character, directory name
     #'   required

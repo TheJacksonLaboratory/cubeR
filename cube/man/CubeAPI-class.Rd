@@ -27,6 +27,7 @@ Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 \item \href{#method-new}{\code{CubeAPI$new()}}
 \item \href{#method-login}{\code{CubeAPI$login()}}
 \item \href{#method-get_element}{\code{CubeAPI$get_element()}}
+\item \href{#method-get_metadata_collection}{\code{CubeAPI$get_metadata_collection()}}
 \item \href{#method-get_data_store_files}{\code{CubeAPI$get_data_store_files()}}
 \item \href{#method-get_element_instance}{\code{CubeAPI$get_element_instance()}}
 \item \href{#method-get_element_instance_json}{\code{CubeAPI$get_element_instance_json()}}
@@ -90,6 +91,26 @@ get_element
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{element_id}}{integer, element id}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}  http response
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_metadata_collection"></a>}}
+\if{latex}{\out{\hypertarget{method-get_metadata_collection}{}}}
+\subsection{Method \code{get_metadata_collection()}}{
+get_metadata_collection  get metadata collection
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_metadata_collection(user = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{user}}{character, user id}
 }
 \if{html}{\out{</div>}}
 }

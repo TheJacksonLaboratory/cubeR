@@ -109,6 +109,7 @@ Auth0DeviceAuth <- R6::R6Class(
     #' https://httr.r-lib.org
     get_device_code = function() {
       url = paste0('https://', private$.tenant_url, '/oauth/device/code')
+
       response = POST(url,
                       body = list(client_id = private$.client_id,
                                   scopes    = private$.scopes,

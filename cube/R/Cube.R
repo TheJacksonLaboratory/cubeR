@@ -17,6 +17,7 @@ log_threshold(DEBUG)
 #'   > cube_obj = Cube$new()
 #'   > cube_obj$login()    # call the login to get url for verification
 #'   # do the verification in a browser
+#'   > response = cube_obj$get_element()
 #'   > json = cube_obj$get_metadata_json(element_id = 116, page_size = 5)
 #'   > metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)
 #'
@@ -76,6 +77,43 @@ Cube = R6::R6Class(
     #' @return character, url for verification, and user will open it in a browser
     login = function() {
       self$cubeapi$login()
+    },
+
+    #' @description
+    #' get_element
+    #' @param element_id integer, element id
+    #'
+    #' @return Response \code{httr::Response}  http response
+    get_element = function(
+      element_id = NULL
+    ) {
+      response = self$cubeapi$get_element(element_id)
+    },
+
+    #' @description
+    #' get_data, get actual data
+    #' @param page integer, page number
+    #' @param page_size integer, number of items per page
+    #'
+    #' @return data.frame
+    get_data = function(
+      page = 1,
+      page_size = 100
+    ) {
+      # to do
+      log_info("get_data ", page_size)
+
+    },
+
+    #' @description
+    #' get_metadata_collection  get metadata collection
+    #' @param user character, user id
+    #'
+    #' @return Response \code{httr::Response}  http response
+    get_metadata_collection = function(
+      user = NULL
+    ) {
+      self$cubeapi$get_metadata_collection(user)
     },
 
     #' @description
@@ -220,32 +258,6 @@ Cube = R6::R6Class(
             max_number_of_row)
       }
       results = private$.database_obj$select(query);
-    },
-
-    #' @description
-    #' get_element
-    #' @param element_id integer, element id
-    #'
-    #' @return Response \code{httr::Response}  http response
-    get_element = function(
-      element_id = NULL
-    ) {
-      response = self$cubeapi$get_element(element_id)
-    },
-
-    #' @description
-    #' get_data, get actual data
-    #' @param page integer, page number
-    #' @param page_size integer, number of items per page
-    #'
-    #' @return data.frame
-    get_data = function(
-      page = 1,
-      page_size = 100
-    ) {
-      # to do
-      log_info("get_data ", page_size)
-
     },
 
     #' @description

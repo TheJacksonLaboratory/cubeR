@@ -19,7 +19,7 @@ Class \code{cube} defines a Cube analysis object.
 
 \item{\code{accession_ids}}{vector of characters, accession ids
 
-Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the login to get url for verificationdo the verification in a browserjson = cube_obj$get_metadata_json(element_id = 116, page_size = 5)metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)}
+Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the login to get url for verificationdo the verification in a browserresponse = cube_obj$get_element()json = cube_obj$get_metadata_json(element_id = 116, page_size = 5)metadata = cube_obj$get_metadata(element_id = 116, page_size = 5)}
 }}
 
 \section{Public fields}{
@@ -39,11 +39,12 @@ Example to use this classcube_obj = Cube$new()cube_obj$login()    # call the log
 \item \href{#method-new}{\code{Cube$new()}}
 \item \href{#method-get_version}{\code{Cube$get_version()}}
 \item \href{#method-login}{\code{Cube$login()}}
+\item \href{#method-get_element}{\code{Cube$get_element()}}
+\item \href{#method-get_data}{\code{Cube$get_data()}}
+\item \href{#method-get_metadata_collection}{\code{Cube$get_metadata_collection()}}
 \item \href{#method-get_metadata_json}{\code{Cube$get_metadata_json()}}
 \item \href{#method-get_metadata}{\code{Cube$get_metadata()}}
 \item \href{#method-get_metadata_from_database}{\code{Cube$get_metadata_from_database()}}
-\item \href{#method-get_element}{\code{Cube$get_element()}}
-\item \href{#method-get_data}{\code{Cube$get_data()}}
 \item \href{#method-annotate}{\code{Cube$annotate()}}
 \item \href{#method-save_annotated_data}{\code{Cube$save_annotated_data()}}
 \item \href{#method-test}{\code{Cube$test()}}
@@ -97,6 +98,68 @@ login, call \code{CubeAPI} login
 
 \subsection{Returns}{
 character, url for verification, and user will open it in a browser
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_element"></a>}}
+\if{latex}{\out{\hypertarget{method-get_element}{}}}
+\subsection{Method \code{get_element()}}{
+get_element
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_element(element_id = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{element_id}}{integer, element id}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}  http response
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_data"></a>}}
+\if{latex}{\out{\hypertarget{method-get_data}{}}}
+\subsection{Method \code{get_data()}}{
+get_data, get actual data
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_data(page = 1, page_size = 100)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{page}}{integer, page number}
+
+\item{\code{page_size}}{integer, number of items per page}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+data.frame
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_metadata_collection"></a>}}
+\if{latex}{\out{\hypertarget{method-get_metadata_collection}{}}}
+\subsection{Method \code{get_metadata_collection()}}{
+get_metadata_collection  get metadata collection
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_metadata_collection(user = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{user}}{character, user id}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+Response \code{httr::Response}  http response
 }
 }
 \if{html}{\out{<hr>}}
@@ -190,48 +253,6 @@ keep it for now
 
 \item{\code{is_pivot}}{boolean, to indicate if the return data
 is pivoted by property_label}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-data.frame
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_element"></a>}}
-\if{latex}{\out{\hypertarget{method-get_element}{}}}
-\subsection{Method \code{get_element()}}{
-get_element
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Cube$get_element(element_id = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{element_id}}{integer, element id}
-}
-\if{html}{\out{</div>}}
-}
-\subsection{Returns}{
-Response \code{httr::Response}  http response
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_data"></a>}}
-\if{latex}{\out{\hypertarget{method-get_data}{}}}
-\subsection{Method \code{get_data()}}{
-get_data, get actual data
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Cube$get_data(page = 1, page_size = 100)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{page}}{integer, page number}
-
-\item{\code{page_size}}{integer, number of items per page}
 }
 \if{html}{\out{</div>}}
 }
