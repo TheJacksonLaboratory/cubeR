@@ -8,6 +8,8 @@ CUBE_VERSION = "0.0.1"
 HTTP_METHOD_GET = 1
 HTTP_METHOD_POST = 2
 
+HTTP_METHOD_LABELS = list("GET", "POST")
+
 API_END_POINT_metadata_definition_element = "metadata_definition/element"
 API_END_POINT_metadata_repository_element_instance = "metadata_repository/element_instance"
 # leave the trial slash on, post will not work if no trial slash

@@ -281,7 +281,7 @@ CubeAPI <- R6::R6Class(
                     self$auth0_obj$verification_uri_complete))
 
       # to do:  need to check the expiration of token
-      log_debug(paste(method, url, sep = ", "))
+      log_info(paste(HTTP_METHOD_LABELS[method], url, sep = ": "))
       if ( method == HTTP_METHOD_POST ) {
         # add with_verbose to debug
         response = POST(url, query = query, body = body, add_headers(
