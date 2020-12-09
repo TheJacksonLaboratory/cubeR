@@ -4,7 +4,7 @@ var logDebug = console.info.bind(window.console);
 var logInfo = console.info.bind(window.console);
 var logError = console.error.bind(window.console);
 
-//var _API_R_BASE = 'http://ctlin0039.jax.org/api-102/';
+//var _API_R_BASE = 'http://ctlin0098.jax.org/api-102/';
 var _API_R_BASE = 'http://localhost/churchilllab/';
 
 /**
@@ -1398,7 +1398,7 @@ var QTL = function() {
     function downloadChromosomes(release, species, callback) {
         //let chromosomeURL = `/api/get/${g.PROTOCOL}//churchilllab.jax.org/ensimpl/api/chromosomes`;
         //let chromosomeURL = 'static/data/chromosomes.json';
-        let chromosomeURL = 'http://ctlin0039.jax.org/ensimpl/api/chromosomes'
+        let chromosomeURL = 'http://ctlin0098.jax.org/ensimpl/api/chromosomes'
         let amp = '';
 
         if (release !== null) {
@@ -1424,7 +1424,7 @@ var QTL = function() {
         //let dataSetsURL = '/api/get/http://10.105.9.102/api/get/http://localhost:8001/datasets';
         //let dataSetsURL = 'static/data/datasets.json'
     	let dataSetsURL = _API_R_BASE + 'datasets';
-//    	let dataSetsURL = 'http://ctlin0039.jax.org/api-102/datasets'
+//    	let dataSetsURL = 'http://ctlin0098.jax.org/api-102/datasets'
     	logInfo(dataSetsURL)
 
         downloadData2(dataSetsURL, 'dataSets', callback);
@@ -2341,7 +2341,7 @@ function syncronizeCrossHairs(chart) {
 
         let snpAssocURL = _API_R_BASE + 'snpassoc?dataset=' + g.dataSetID
         		+ '&id=' + id + '&chrom=' + chromosome + '&location=' + newLocation + '&window_size=' + windowSize;
-        let genesURL = 'http://ctlin0039.jax.org/ensimpl/api/search?species='
+        let genesURL = 'http://ctlin0098.jax.org/ensimpl/api/search?species='
         		+ g.SPECIES_ID + '&term=' + chromosome + ':' + minPos + '-' + maxPos;
 
         if (g.ENSEMBL_RELEASE != null) {
@@ -2420,7 +2420,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateSNPAssocData: ', groupID);
 
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3117,7 +3117,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateMediationData{} ', groupID);
 
         if (g.runningTask) {
-		    let statusURL = 'http://ctlin0039.jax.org/';
+		    let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3249,7 +3249,7 @@ function syncronizeCrossHairs(chart) {
         logDebug('updateEffectData() ', groupID);
 
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -3329,7 +3329,7 @@ function syncronizeCrossHairs(chart) {
         logDebug(groupID);
 
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5061,7 +5061,7 @@ cccc
         logDebug(currentDataset, currentID, correlateDataset, correlateID, correlateSymbol);
 
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5206,7 +5206,7 @@ cccc
 
         logDebug(groupID);
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5474,7 +5474,7 @@ CCCC
         logDebug(groupID);
 
         if (g.runningTask) {
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -5669,7 +5669,7 @@ CCCC
 //        let urlLODCovar = `http://10.105.9.102/api/get/http://localhost:8001/lodscan?dataset=${dataSetID}&id=`;
 //        let urlCorrelation = `http://10.105.9.102/api/get/http://localhost:8001/correlation?dataset=${dataSetID}&id=`;
 
-        let urlGeneData = 'http://ctlin0039.jax.org/ensimpl/api/gene/' + geneID + '?id=&species=' + g.SPECIES_ID;
+        let urlGeneData = 'http://ctlin0098.jax.org/ensimpl/api/gene/' + geneID + '?id=&species=' + g.SPECIES_ID;
         let urlExpression = _API_R_BASE + 'expression?dataset=' + dataSetID + '&id=';
         let urlLOD = _API_R_BASE + 'lodscan?dataset=' + dataSetID + '&id=';
         let urlLODCovar = _API_R_BASE + 'lodscan?dataset=' + dataSetID + '&id=';
@@ -5834,7 +5834,7 @@ CCCC
 
         if (g.runningTask) {
 //            let statusURL = `/api/status/${groupID}`;
-            let statusURL = 'http://ctlin0039.jax.org/';
+            let statusURL = 'http://ctlin0098.jax.org/';
             $.ajax({
                 type: 'GET',
                 url: statusURL,
@@ -6068,7 +6068,7 @@ function init(data_api_url) {
 */
     _API_R_BASE = data_api_url;
     if ( _API_R_BASE == null ) {
-        _API_R_BASE = 'http://ctlin0039.jax.org/attie-islet-secretion/';
+        _API_R_BASE = 'http://ctlin0098.jax.org/attie-islet-secretion/';
     }
 	logInfo(_API_R_BASE);
 
