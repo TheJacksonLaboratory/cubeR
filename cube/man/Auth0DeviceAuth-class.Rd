@@ -11,6 +11,19 @@ Auth0DeviceAuth
 }
 \details{
 Class \code{Auth0DeviceAuth} defines a Auth0DeviceAuth object to interact with Cube Web API.
+
+3 Steps for device authorization:
+\enumerate{
+\item call "get_device_code" to get device code, user verification url
+and user code.
+The user will open the verifcation url in a browser and enter the
+user code
+\item call the "get_access_token" with device_code to retrieve the access
+token
+\item call the API with access_token in the header
+}
+
+Example call:auth0 = Auth0DeviceAuth$new()response = auth0$get_device_code()INFO 2020-12-01 14:02:56 verification_uri: https://thejacksonlaboratory.auth0.com/activateINFO 2020-12-01 14:02:56 verification_uri_complete: https://thejacksonlaboratory.auth0.com/activate?user_code=KCDG-SHDDINFO 2020-12-01 14:02:56 user_code: KCDG-SHDDINFO 2020-12-01 14:02:56 device_code: o4u44BO4Cf8QUSJRxs9eDkO3access_token = auth0$get_access_token()INFO 2020-12-01 14:03:51 access_token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXi5sNKR6t7iXICoBYg3N5GhM4CaP0uk_A
 }
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}

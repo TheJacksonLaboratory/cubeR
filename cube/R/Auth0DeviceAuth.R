@@ -5,10 +5,6 @@ library(httr)
 #'
 #' Class \code{Auth0DeviceAuth} defines a Auth0DeviceAuth object to interact with Cube Web API.
 #'
-#' @name Auth0DeviceAuth-class
-#' @rdname Auth0DeviceAuth-class
-#' @exportClass Auth0DeviceAuth
-#'
 #' 3 Steps for device authorization:
 #'   1. call "get_device_code" to get device code, user verification url
 #'      and user code.
@@ -27,6 +23,11 @@ library(httr)
 #'   INFO [2020-12-01 14:02:56] device_code: o4u44BO4Cf8QUSJRxs9eDkO3
 #' > access_token = auth0$get_access_token()
 #'   INFO [2020-12-01 14:03:51] access_token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXi5sNKR6t7iXICoBYg3N5GhM4CaP0uk_A
+#'
+#'
+#' @name Auth0DeviceAuth-class
+#' @rdname Auth0DeviceAuth-class
+#' @exportClass Auth0DeviceAuth
 #'
 #'
 #' @export

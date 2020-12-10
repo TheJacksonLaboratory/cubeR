@@ -7,14 +7,14 @@ library(rapportools)
 #'
 #' Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 #'
-#' @name CubeAPI-class
-#' @rdname CubeAPI-class
-#' @exportClass CubeAPI
-#'
 #' usage example:
 #'   > cube_api = CubeAPI$new()
 #'   > cube_api$login()
 #'   > response = cube_api$get_element()
+#'
+#' @name CubeAPI-class
+#' @rdname CubeAPI-class
+#' @exportClass CubeAPI
 #'
 #' @export
 CubeAPI <- R6::R6Class(
@@ -60,7 +60,10 @@ CubeAPI <- R6::R6Class(
     #' @return character verification_uri and user_code
     login = function() {
       response = self$auth0_obj$get_device_code()
-      self$auth0_obj$verification_uri_complete
+      verification_uri = self$auth0_obj$verification_uri_complete
+
+      # start the login widget
+      login_widget(verification_uri)
     },
 
     #' @description
@@ -295,6 +298,7 @@ CubeAPI <- R6::R6Class(
       }
 
       log_info(paste0("status_code: ", response$status_code))
+      log_debug(paste0("url: ", response$url))
       response
     },
 

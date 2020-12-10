@@ -21,6 +21,7 @@ Imports:
     here,
     jsonlite,
     httr,
+    htmlwidgets,
     logger,
     rapportools,
     R6 (>= 2.4.0),

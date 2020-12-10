@@ -11,6 +11,8 @@ CubeAPI
 }
 \details{
 Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
+
+usage example:cube_api = CubeAPI$new()cube_api$login()response = cube_api$get_element()
 }
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
