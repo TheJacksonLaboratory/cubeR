@@ -19,5 +19,5 @@ data.frame
 }
 \description{
 This function can return database query string based on the element id
-passed in as a paramteter.
+passed in as a parameter.
 }

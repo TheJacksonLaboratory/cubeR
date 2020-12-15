@@ -1,6 +1,9 @@
+library("data.table")
+library(cloudml)
+library(readr)
+
 #' These are the util function shared by the package
 #'
-
 
 #' @description
 #' to_json convert a HTTP json response \code{httr::Response} to R
@@ -20,10 +23,28 @@ response_json_to_data = function(
 }
 
 
+#' @description
+#' get_bucket_data get bucket data
+#'
+#' @param bucket_name character, bucket name
+#' @param file_name character, file name
+#'
+#' @return dataframe bucket data
+#'
+#' @export
+get_bucket_data = function(
+  bucket_name,
+  file_name
+) {
+  log_debug(paste(bucket_name, file_name, sep = ": "))
+  data_dir = gs_data_dir( bucket_name )
+  read.table(file.path(data_dir, file_name), sep = '\t',header = TRUE)
+}
+
 #' Get the get_metadata_query
 #'
 #' This function can return database query string based on the element id
-#' passed in as a paramteter.
+#' passed in as a parameter.
 #'
 #' @param dataset_id integer for the element id in database
 #' @param accession_ids a vector of character of accession ids to filter on

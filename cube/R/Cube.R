@@ -107,13 +107,11 @@ Cube = R6::R6Class(
 
     #' @description
     #' get_metadata_collection  get metadata collection
-    #' @param user character, user id
     #'
     #' @return Response \code{httr::Response}  http response
     get_metadata_collection = function(
-      user = NULL
     ) {
-      self$cubeapi$get_metadata_collection(user)
+      self$cubeapi$get_metadata_collection()
     },
 
     #' @description

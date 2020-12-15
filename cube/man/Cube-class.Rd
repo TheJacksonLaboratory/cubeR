@@ -148,16 +148,9 @@ data.frame
 \subsection{Method \code{get_metadata_collection()}}{
 get_metadata_collection  get metadata collection
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Cube$get_metadata_collection(user = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Cube$get_metadata_collection()}\if{html}{\out{</div>}}
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{user}}{character, user id}
-}
-\if{html}{\out{</div>}}
-}
 \subsection{Returns}{
 Response \code{httr::Response}  http response
 }

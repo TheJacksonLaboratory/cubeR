@@ -18,6 +18,7 @@ Suggests:
     knitr (>= 1.29), 
     rmarkdown    
 Imports:
+    cloudml,
     here,
     jsonlite,
     httr,

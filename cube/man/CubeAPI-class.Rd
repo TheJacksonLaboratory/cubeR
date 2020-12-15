@@ -30,6 +30,10 @@ usage example:cube_api = CubeAPI$new()cube_api$login()response = cube_api$get_el
 \item \href{#method-login}{\code{CubeAPI$login()}}
 \item \href{#method-get_element}{\code{CubeAPI$get_element()}}
 \item \href{#method-get_metadata_collection}{\code{CubeAPI$get_metadata_collection()}}
+\item \href{#method-get_metadata_collection_storage_info}{\code{CubeAPI$get_metadata_collection_storage_info()}}
+\item \href{#method-parse_accession_ids}{\code{CubeAPI$parse_accession_ids()}}
+\item \href{#method-parse_storage_uri}{\code{CubeAPI$parse_storage_uri()}}
+\item \href{#method-parse_uri}{\code{CubeAPI$parse_uri()}}
 \item \href{#method-get_data_store_files}{\code{CubeAPI$get_data_store_files()}}
 \item \href{#method-get_element_instance}{\code{CubeAPI$get_element_instance()}}
 \item \href{#method-get_element_instance_json}{\code{CubeAPI$get_element_instance_json()}}
@@ -106,18 +110,88 @@ Response \code{httr::Response}  http response
 \subsection{Method \code{get_metadata_collection()}}{
 get_metadata_collection  get metadata collection
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_metadata_collection(user = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_metadata_collection()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+Response \code{httr::Response}  http response
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_metadata_collection_storage_info"></a>}}
+\if{latex}{\out{\hypertarget{method-get_metadata_collection_storage_info}{}}}
+\subsection{Method \code{get_metadata_collection_storage_info()}}{
+get_metadata_collection_storage_info  get metadata collection bucket
+storage information
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$get_metadata_collection_storage_info()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+dataframe with 4 columns: "accession_id","uri",
+"bucket_name", "file_name"
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-parse_accession_ids"></a>}}
+\if{latex}{\out{\hypertarget{method-parse_accession_ids}{}}}
+\subsection{Method \code{parse_accession_ids()}}{
+parse_accession_ids  parse out accession ids
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$parse_accession_ids(response)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
-\item{\code{user}}{character, user id}
+\item{\code{response}}{Response \code{httr::Response}  http response}
 }
 \if{html}{\out{</div>}}
 }
 \subsection{Returns}{
-Response \code{httr::Response}  http response
+vector of characters, list of accession id
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-parse_storage_uri"></a>}}
+\if{latex}{\out{\hypertarget{method-parse_storage_uri}{}}}
+\subsection{Method \code{parse_storage_uri()}}{
+parse_storage_uri  parse out storage url information
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$parse_storage_uri(response)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{response}}{Response \code{httr::Response}  http response}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+dataframe with 4 columns: "accession_id","uri",
+"bucket_name", "file_name"
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-parse_uri"></a>}}
+\if{latex}{\out{\hypertarget{method-parse_uri}{}}}
+\subsection{Method \code{parse_uri()}}{
+parse_uri  parse out url list
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{CubeAPI$parse_uri(uri)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{uri}}{character, uri
+example: https://storage.cloud.google.com/jax-cube-prd-ctrl-01-project-data/study_4-1/4.1_DEXA_to_201016.txt?authuser=1}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+vector of characters, list(bucket_name, file_name)
 }
 }
 \if{html}{\out{<hr>}}

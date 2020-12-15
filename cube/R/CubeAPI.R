@@ -81,15 +81,117 @@ CubeAPI <- R6::R6Class(
 
     #' @description
     #' get_metadata_collection  get metadata collection
-    #' @param user character, user id
     #'
     #' @return Response \code{httr::Response}  http response
     get_metadata_collection = function(
-      user = NULL
     ) {
-      ep = paste0(API_END_POINT_metadata_repository_collection, "?user=", user)
-      self$get_end_point(ep)
+      self$get_end_point(API_END_POINT_metadata_repository_collection)
     },
+
+    #' @description
+    #' get_metadata_collection_storage_info  get metadata collection bucket
+    #' storage information
+    #'
+    #' @return dataframe with 4 columns: "accession_id","uri",
+    #'  "bucket_name", "file_name"
+    get_metadata_collection_storage_info = function(
+    ) {
+      response = self$get_metadata_collection()
+      if ( response$status_code != 200 ) {
+        stop("Failed to get_metadata_collection")
+      }
+      accession_ids = self$parse_accession_ids(response = response)
+      log_info(paste("accession_ids length", length(accession_ids), sep=": "))
+      if ( length(accession_ids) < 1 ) {
+        stop("No collection data found")
+      }
+
+      md_response = self$get_element_instance(accession_ids = accession_ids)
+      if ( md_response$status_code != 200 ) {
+        stop("Failed to get metadata for access_ids")
+      }
+
+      self$parse_storage_uri(md_response)
+    },
+
+    #' @description
+    #' parse_accession_ids  parse out accession ids
+    #' @param response Response \code{httr::Response}  http response
+    #'
+    #' @return vector of characters, list of accession id
+    parse_accession_ids = function(response) {
+      results <- content(response)$results
+      accession_ids <- vector("list")
+      index <- 1
+      for (i in 1:length(results)) {
+        result <- results[[i]]
+        if (!exists('collection_items', where=result)) {
+          next
+        }
+        for (collection_item in result['collection_items'] ) {
+          for (i in 1:length(collection_item)) {
+            accession_ids[[index]] <- (collection_item[[i]]$accession_id )
+            index <- index + 1
+          }
+        }
+      }
+      return( Filter(Negate(is.null), accession_ids) )
+    },
+
+
+    #' @description
+    #' parse_storage_uri  parse out storage url information
+    #' @param response Response \code{httr::Response}  http response
+    #'
+    #' @return dataframe with 4 columns: "accession_id","uri",
+    #'   "bucket_name", "file_name"
+    parse_storage_uri = function(response) {
+      results <- content(response)$results
+      df <- data.frame("accession_id","uri", "bucket_name", "file_name")
+      names(df)<-c("accession_id","uri", "bucket_name", "file_name")
+      index <- 1
+      for (i in 1:length(results)) {
+        result <- results[[i]]
+        if (exists('property_values', where=result)) {
+          uri <- Filter(
+            function(x) startsWith(x$property_value, 'http')
+                || startsWith(x$property_value, 'gs') ,
+            result$property_values)
+          if (length(uri) > 0) {
+            value = uri[[1]]$property_value
+            bucket_file <- self$parse_uri(value)
+            df[index,] = list(accession_id = result$accession_id,
+                              uri = value,
+                              bucket_name = bucket_file$bucket_name,
+                              file_name = bucket_file$file_name)
+            index <- index + 1
+          }
+        }
+      }
+      return (df)
+    },
+
+    #' @description
+    #' parse_uri  parse out url list
+    #'
+    #' @param uri character, uri
+    #'   example: https://storage.cloud.google.com/jax-cube-prd-ctrl-01-project-data/study_4-1/4.1_DEXA_to_201016.txt?authuser=1
+    #'
+    #' @return vector of characters, list(bucket_name, file_name)
+    parse_uri = function(uri) {
+      if ( length(uri) < 1 ) {
+        return (c("", ""))
+      }
+
+      parts <- str_split(uri, "/")[[1]]
+      len <- length(parts)
+      file_name =  parts[len]
+      # remove "?authuser=1" from file name if exist
+      file_name <- str_split(file_name, "\\?")[[1]][1]
+      bucket_name = paste0("gs://", parts[len-2], "/", parts[len-1])
+      list(bucket_name = bucket_name, file_name = file_name)
+    },
+
 
     #' @description
     #' get_data_store_files
