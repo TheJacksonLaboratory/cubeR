@@ -55,4 +55,10 @@ test_that("test post_element_instance_filter ", {
   #expect_equal(json$count, 2)
 })
 
+test_that("test get_metadata_collection_storage_info ", {
+  df <- cube_api$get_metadata_collection_storage_info()
+
+  expect_equal(ncol(df), 4)
+})
+
 

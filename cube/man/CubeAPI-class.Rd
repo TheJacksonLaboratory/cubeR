@@ -12,7 +12,7 @@ CubeAPI
 \details{
 Class \code{CubeAPI} defines a CubeAPI object to interact with Cube Web API.
 
-usage example:cube_api = CubeAPI$new()cube_api$login()response = cube_api$get_element()
+usage example:cube_api = CubeAPI$new()cube_api$login()storage_info <- cube_api$get_metadata_collection_storage_info()View(storage_info)data <- get_bucket_data(bucket_name = storage_info2, 3, file_name = storage_info2, 4)response = cube_api$get_element()
 }
 \section{Public fields}{
 \if{html}{\out{<div class="r6-fields">}}
@@ -128,8 +128,8 @@ storage information
 }
 
 \subsection{Returns}{
-dataframe with 4 columns: "accession_id","uri",
-"bucket_name", "file_name"
+dataframe with 4 columns:
+"accession_id", "uri", "bucket_name", "file_name"
 }
 }
 \if{html}{\out{<hr>}}
@@ -169,8 +169,8 @@ parse_storage_uri  parse out storage url information
 \if{html}{\out{</div>}}
 }
 \subsection{Returns}{
-dataframe with 4 columns: "accession_id","uri",
-"bucket_name", "file_name"
+dataframe with 4 columns:
+"accession_id", "uri", "bucket_name", "file_name"
 }
 }
 \if{html}{\out{<hr>}}

@@ -152,6 +152,28 @@ Auth0DeviceAuth <- R6::R6Class(
     },
 
     #' @description
+    #' get_access_token_debug
+    #'
+    #' @return character access code
+    get_access_token_debug = function() {
+      if ( is.null(self$device_code) )
+        stop("Unauthorized, please run get_device_code to login first")
+
+      url = paste0('https://', private$.tenant_url, '/oauth/token')
+      response = POST(url,
+                      body = list(grant_type  = 'urn:ietf:params:oauth:grant-type:device_code',
+                                  device_code = self$device_code,
+                                  client_id   = private$.client_id),
+                      encode = "form")
+      content = content(response)
+      self$access_token  = content[["access_token"]]
+      self$expires_in  = content[["expires_in"]]
+      log_debug(paste("access_token", self$access_token, sep = ": "))
+      log_info(paste("access_token length", str_length(self$access_token), sep = ": "))
+      return (content)
+    },
+
+    #' @description
     #' finalize
     finalize = function() {
       log_info("finalize", self$path)

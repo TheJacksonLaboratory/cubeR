@@ -48,6 +48,7 @@ Example call:auth0 = Auth0DeviceAuth$new()response = auth0$get_device_code()INFO
 \item \href{#method-new}{\code{Auth0DeviceAuth$new()}}
 \item \href{#method-get_device_code}{\code{Auth0DeviceAuth$get_device_code()}}
 \item \href{#method-get_access_token}{\code{Auth0DeviceAuth$get_access_token()}}
+\item \href{#method-get_access_token_debug}{\code{Auth0DeviceAuth$get_access_token_debug()}}
 \item \href{#method-finalize}{\code{Auth0DeviceAuth$finalize()}}
 \item \href{#method-print}{\code{Auth0DeviceAuth$print()}}
 }
@@ -107,6 +108,19 @@ https://httr.r-lib.org
 get_access_token
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Auth0DeviceAuth$get_access_token()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+character access code
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-get_access_token_debug"></a>}}
+\if{latex}{\out{\hypertarget{method-get_access_token_debug}{}}}
+\subsection{Method \code{get_access_token_debug()}}{
+get_access_token_debug
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Auth0DeviceAuth$get_access_token_debug()}\if{html}{\out{</div>}}
 }
 
 \subsection{Returns}{

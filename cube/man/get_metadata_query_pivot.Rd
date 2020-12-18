@@ -2,7 +2,7 @@
 % Please edit documentation in R/util.R
 \name{get_metadata_query_pivot}
 \alias{get_metadata_query_pivot}
-\title{Get the get_metadata_query_pivot}
+\title{get_metadata_query_pivot}
 \usage{
 get_metadata_query_pivot(
   dataset_id,

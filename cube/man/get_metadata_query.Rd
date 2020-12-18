@@ -2,7 +2,7 @@
 % Please edit documentation in R/util.R
 \name{get_metadata_query}
 \alias{get_metadata_query}
-\title{Get the get_metadata_query}
+\title{get_metadata_query}
 \usage{
 get_metadata_query(dataset_id, accession_ids = NULL, max_number_of_row = 100)
 }

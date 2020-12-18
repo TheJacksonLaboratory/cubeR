@@ -10,6 +10,9 @@ library(rapportools)
 #' usage example:
 #'   > cube_api = CubeAPI$new()
 #'   > cube_api$login()
+#'   > storage_info <- cube_api$get_metadata_collection_storage_info()
+#'   > View(storage_info)
+#'   > data <- get_bucket_data(bucket_name = storage_info[2, 3], file_name = storage_info[2, 4])
 #'   > response = cube_api$get_element()
 #'
 #' @name CubeAPI-class
@@ -46,12 +49,12 @@ CubeAPI <- R6::R6Class(
       url_base = NULL
     ) {
       if (missing(url_base))
-        self$url_base = Sys.getenv("CUBE_APP_API_URL_BASE")
+        self$url_base <- Sys.getenv("CUBE_APP_API_URL_BASE")
       else
-        self$url_base = url_base
-      log_debug(self$url_base)
+        self$url_base <- url_base
+      log_info(self$url_base)
 
-      self$auth0_obj = Auth0DeviceAuth$new()
+      self$auth0_obj <- Auth0DeviceAuth$new()
     },
 
     #' @description
@@ -59,8 +62,8 @@ CubeAPI <- R6::R6Class(
     #'
     #' @return character verification_uri and user_code
     login = function() {
-      response = self$auth0_obj$get_device_code()
-      verification_uri = self$auth0_obj$verification_uri_complete
+      response <- self$auth0_obj$get_device_code()
+      verification_uri <- self$auth0_obj$verification_uri_complete
 
       # start the login widget
       login_widget(verification_uri)
@@ -74,9 +77,9 @@ CubeAPI <- R6::R6Class(
     get_element = function(
       element_id = NULL
     ) {
-      end_point = self$append_to_path( end_point = API_END_POINT_metadata_definition_element,
+      end_point <- self$append_to_path( end_point = API_END_POINT_metadata_definition_element,
                                        path = element_id)
-      response = self$get_end_point(end_point = end_point)
+      response <- self$get_end_point(end_point = end_point)
     },
 
     #' @description
@@ -92,26 +95,28 @@ CubeAPI <- R6::R6Class(
     #' get_metadata_collection_storage_info  get metadata collection bucket
     #' storage information
     #'
-    #' @return dataframe with 4 columns: "accession_id","uri",
-    #'  "bucket_name", "file_name"
+    #' @return dataframe with 4 columns:
+    #'  "accession_id", "uri", "bucket_name", "file_name"
     get_metadata_collection_storage_info = function(
     ) {
-      response = self$get_metadata_collection()
+      response <- self$get_metadata_collection()
       if ( response$status_code != 200 ) {
         stop("Failed to get_metadata_collection")
       }
-      accession_ids = self$parse_accession_ids(response = response)
-      log_info(paste("accession_ids length", length(accession_ids), sep=": "))
+      accession_ids <- self$parse_accession_ids(response = response)
+      log_info("number of accession_ids: {length(accession_ids)}")
       if ( length(accession_ids) < 1 ) {
         stop("No collection data found")
       }
 
-      md_response = self$get_element_instance(accession_ids = accession_ids)
+      md_response <- self$get_element_instance(accession_ids = accession_ids)
       if ( md_response$status_code != 200 ) {
-        stop("Failed to get metadata for access_ids")
+        stop("Failed to get metadata for accession ids")
       }
 
-      self$parse_storage_uri(md_response)
+      df <- self$parse_storage_uri(md_response)
+      log_info("number of row returned: {nrow(df)}")
+      return (df)
     },
 
     #' @description
@@ -129,9 +134,11 @@ CubeAPI <- R6::R6Class(
           next
         }
         for (collection_item in result['collection_items'] ) {
-          for (i in 1:length(collection_item)) {
-            accession_ids[[index]] <- (collection_item[[i]]$accession_id )
-            index <- index + 1
+          if ( length(collection_item) > 0 ) {
+            for (j in 1:length(collection_item)) {
+                accession_ids[[index]] <- (collection_item[[j]]$accession_id )
+                index <- index + 1
+            }
           }
         }
       }
@@ -143,8 +150,8 @@ CubeAPI <- R6::R6Class(
     #' parse_storage_uri  parse out storage url information
     #' @param response Response \code{httr::Response}  http response
     #'
-    #' @return dataframe with 4 columns: "accession_id","uri",
-    #'   "bucket_name", "file_name"
+    #' @return dataframe with 4 columns:
+    #'  "accession_id", "uri", "bucket_name", "file_name"
     parse_storage_uri = function(response) {
       results <- content(response)$results
       df <- data.frame("accession_id","uri", "bucket_name", "file_name")
@@ -185,10 +192,22 @@ CubeAPI <- R6::R6Class(
 
       parts <- str_split(uri, "/")[[1]]
       len <- length(parts)
-      file_name =  parts[len]
+
+      # file name is last part
+      file_name <- parts[len]
       # remove "?authuser=1" from file name if exist
       file_name <- str_split(file_name, "\\?")[[1]][1]
-      bucket_name = paste0("gs://", parts[len-2], "/", parts[len-1])
+
+      # concacenate bucket name
+      start_index <- 4
+      if ( startsWith(uri, "http") ) {
+        start_index <- 5
+      }
+      bucket_name <- "gs://"
+      for (i in start_index:len-1) {
+        bucket_name = paste0(bucket_name, parts[i], "/")
+      }
+      #bucket_name = paste0("gs://", parts[len-2], "/", parts[len-1])
       list(bucket_name = bucket_name, file_name = file_name)
     },
 
@@ -202,9 +221,9 @@ CubeAPI <- R6::R6Class(
     get_data_store_files = function(
       dir_name
     ) {
-      end_point = self$append_to_path(end_point = API_END_POINT_data_store_files,
+      end_point <- self$append_to_path(end_point = API_END_POINT_data_store_files,
                                       path = dir_name)
-      response = self$get_end_point(end_point = end_point)
+      response <- self$get_end_point(end_point = end_point)
     },
 
     #' @description
@@ -242,7 +261,7 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      response = self$get_element_instance( element_id = element_id,
+      response <- self$get_element_instance( element_id = element_id,
                                             accession_ids = accession_ids,
                                             page = page,
                                             page_size = page_size)
@@ -267,8 +286,8 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      url = paste0(self$url_base, end_point);
-      query = list(element_id = element_id,
+      url <- paste0(self$url_base, end_point);
+      query <- list(element_id = element_id,
                    page = page,
                    page_size = page_size)
       if ( length(accession_ids) > 0 ) {
@@ -311,7 +330,7 @@ CubeAPI <- R6::R6Class(
       page_size = 100
     ) {
 
-      body = toJSON(list(elementId = element_id,
+      body <- toJSON(list(elementId = element_id,
                          parent_element_instance_id = parent_element_instance_id,
                          accessionId = accession_ids,
                          propertyFilters = property_filters
@@ -341,8 +360,8 @@ CubeAPI <- R6::R6Class(
       page = 1,
       page_size = 100
     ) {
-      url = paste0(self$url_base, end_point)
-      query = list(page = page,
+      url <- paste0(self$url_base, end_point)
+      query <- list(page = page,
                    page_size = page_size)
       self$call(method = HTTP_METHOD_POST, url = url, query = query, body = body)
     },
@@ -389,18 +408,21 @@ CubeAPI <- R6::R6Class(
       log_info(paste(HTTP_METHOD_LABELS[method], url, sep = ": "))
       if ( method == HTTP_METHOD_POST ) {
         # add with_verbose to debug
-        response = POST(url, query = query, body = body, add_headers(
+        response <- POST(url, query = query, body = body, add_headers(
           "Authorization" = paste("Bearer", self$auth0_obj$access_token, sep = " "),
           "Content-Type"  = "application/json"),
           encode = "json")   # either raw or json works
       } else {
-        response = GET(url, query = query, add_headers(
+        response <- GET(url, query = query, add_headers(
           "Authorization" = paste("Bearer", self$auth0_obj$access_token, sep = " "),
           "Content-Type"  = "application/json"))
       }
 
       log_info(paste0("status_code: ", response$status_code))
-      log_debug(paste0("url: ", response$url))
+      if ( response$status_code != 200 ) {
+        log_error("response: {content(response)} ")
+        log_error("response url: {response$url}")
+      }
       response
     },
 

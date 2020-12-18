@@ -18,3 +18,6 @@ https://httr.r-lib.org
 to_json convert a HTTP json response \code{httr::Response} to R
 data \code{jsonlite::fromJSON}.
 }
+\details{
+response_json_to_data
+}

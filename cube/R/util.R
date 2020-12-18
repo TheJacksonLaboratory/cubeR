@@ -5,6 +5,8 @@ library(readr)
 #' These are the util function shared by the package
 #'
 
+#' response_json_to_data
+#'
 #' @description
 #' to_json convert a HTTP json response \code{httr::Response} to R
 #'    data \code{jsonlite::fromJSON}.
@@ -23,6 +25,8 @@ response_json_to_data = function(
 }
 
 
+#' get_bucket_data
+#'
 #' @description
 #' get_bucket_data get bucket data
 #'
@@ -41,7 +45,7 @@ get_bucket_data = function(
   read.table(file.path(data_dir, file_name), sep = '\t',header = TRUE)
 }
 
-#' Get the get_metadata_query
+#' get_metadata_query
 #'
 #' This function can return database query string based on the element id
 #' passed in as a parameter.
@@ -86,7 +90,7 @@ get_metadata_query <- function(
 }
 
 
-#' Get the get_metadata_query_pivot
+#' get_metadata_query_pivot
 #'
 #' This function can return database query string based on the element id
 #' passed in as a parameter.  It pivots the property_label and property value,
