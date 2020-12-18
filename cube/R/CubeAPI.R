@@ -205,7 +205,10 @@ CubeAPI <- R6::R6Class(
       }
       bucket_name <- "gs://"
       for (i in start_index:len-1) {
-        bucket_name = paste0(bucket_name, parts[i], "/")
+        bucket_name = paste0(bucket_name, parts[i])
+        if ( i < len-1 ) {
+          bucket_name = paste0(bucket_name, "/")
+        }
       }
       #bucket_name = paste0("gs://", parts[len-2], "/", parts[len-1])
       list(bucket_name = bucket_name, file_name = file_name)
