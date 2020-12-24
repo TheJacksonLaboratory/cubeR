@@ -1,5 +1,5 @@
 library(httr)
-
+library(rlist)
 #' Auth0DeviceAuth
 #'
 #'
@@ -100,7 +100,22 @@ Auth0DeviceAuth <- R6::R6Class(
         private$.audience = tenant_url
 
       # set access_token in environment variable if exists for testing purpose
-      self$access_token = Sys.getenv("TEST_ACCESS_TOKEN")
+      if ( str_length(Sys.getenv("TEST_ACCESS_TOKEN")) ) {
+
+      }
+
+      # load cache access token
+      self$access_token = self$load_access_token()
+      log_debug("Cached token length: {str_length(self$access_token)}")
+
+      # if no access token, check if there any test token
+      if ( is.empty(self$access_token) ) {
+        # set access_token in environment variable if exists for testing purpose
+        self$access_token = Sys.getenv("TEST_ACCESS_TOKEN")
+        if ( !is.empty(self$access_token) ) {
+          log_debug("Test token length: {str_length(self$access_token)}")
+        }
+      }
     },
 
     #' @description
@@ -148,7 +163,40 @@ Auth0DeviceAuth <- R6::R6Class(
       self$expires_in  = content[["expires_in"]]
       log_debug(paste("access_token", self$access_token, sep = ": "))
       log_info(paste("access_token length", str_length(self$access_token), sep = ": "))
+
+      if ( !is.empty(self$access_token) ) {
+        self$save_access_token(self$access_token)
+      }
+
       self$access_token
+    },
+
+    #' @description
+    #' save_access_token save access token to a file
+    #' @param access_token access token
+    #'
+    save_access_token = function(access_token) {
+      aList = list()
+      aList[USER_ACCESS_KEY] = access_token
+      list.save(aList, USER_ACCESS_TOKEN_FILE)
+    },
+
+    #' @description
+    #' load_access_token load access token from a file
+    #'
+    load_access_token = function() {
+      if (file.exists(USER_ACCESS_TOKEN_FILE)) {
+        aList = list.load(USER_ACCESS_TOKEN_FILE)
+        return (aList[USER_ACCESS_KEY][[1]])
+      }
+    },
+
+    #' @description
+    #' clear access token
+    #'
+    clear_access_token = function() {
+      self$auth0_obj$access_token = NULL
+      Sys.setenv(TEST_ACCESS_TOKEN = "")
     },
 
     #' @description

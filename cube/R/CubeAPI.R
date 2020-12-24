@@ -48,6 +48,7 @@ CubeAPI <- R6::R6Class(
     initialize = function(
       url_base = NULL
     ) {
+      log_info("Version: {get_version()}")
       if (missing(url_base))
         self$url_base <- Sys.getenv("CUBE_APP_API_URL_BASE")
       else
@@ -65,8 +66,10 @@ CubeAPI <- R6::R6Class(
       response <- self$auth0_obj$get_device_code()
       verification_uri <- self$auth0_obj$verification_uri_complete
 
-      # start the login widget
-      login_widget(verification_uri)
+      # start the login widget, only if run within RStudio
+      if ( Sys.getenv("RSTUDIO") == "1" ) {
+        login_widget(verification_uri)
+      }
     },
 
     #' @description
@@ -109,7 +112,8 @@ CubeAPI <- R6::R6Class(
         stop("No collection data found")
       }
 
-      md_response <- self$get_element_instance(accession_ids = accession_ids)
+      md_response <- self$get_element_instance(accession_ids =
+                                unique(accession_ids, incomparables = FALSE))
       if ( md_response$status_code != 200 ) {
         stop("Failed to get metadata for accession ids")
       }
@@ -394,8 +398,7 @@ CubeAPI <- R6::R6Class(
 
         # check if device_code exisit, if not, stop and ask user to run login first
         if ( is.empty(self$auth0_obj$device_code) ) {
-          stop("Unauthorized, please call login to get verification URL and verify
-             it in a browser")
+          stop("Unauthorized, run 'cube_api$login()' to login")
         }
 
         self$auth0_obj$get_access_token()
@@ -404,7 +407,7 @@ CubeAPI <- R6::R6Class(
 
       # if no access token, stop here
       if ( is.empty(self$auth0_obj$access_token) )
-        stop( paste0("Validation error: Please open the validate URL in the the browser: ",
+        stop( paste0("Verification error: open the following url to verify: ",
                     self$auth0_obj$verification_uri_complete))
 
       # to do:  need to check the expiration of token
@@ -421,10 +424,27 @@ CubeAPI <- R6::R6Class(
           "Content-Type"  = "application/json"))
       }
 
-      log_info(paste0("status_code: ", response$status_code))
+      log_info("status_code: {response$status_code}")
+      log_debug("response url: {response$url}")
       if ( response$status_code != 200 ) {
-        log_error("response: {content(response)} ")
+        content = content(response)
+        log_error("response: {content} ")
         log_error("response url: {response$url}")
+        # check for access token expire
+        if ( grepl("Signature has expired", content, fixed = TRUE ) ) {
+          log_error("Token expired. run 'cube_api$login()' to login")
+          #clear out expired access token
+          self$auth0_obj$clear_access_token()
+          # relogin
+          self$login()
+        # check invalid token
+        } else if ( grepl("Error decoding signature", content, fixed = TRUE ) ) {
+          log_error("Invalid Token. run 'cube_api$login()' to login")
+          #clear out expired access token
+          self$auth0_obj$clear_access_token()
+          # relogin
+          self$login()
+        }
       }
       response
     },

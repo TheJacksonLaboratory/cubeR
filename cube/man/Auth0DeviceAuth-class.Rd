@@ -48,6 +48,9 @@ Example call:auth0 = Auth0DeviceAuth$new()response = auth0$get_device_code()INFO
 \item \href{#method-new}{\code{Auth0DeviceAuth$new()}}
 \item \href{#method-get_device_code}{\code{Auth0DeviceAuth$get_device_code()}}
 \item \href{#method-get_access_token}{\code{Auth0DeviceAuth$get_access_token()}}
+\item \href{#method-save_access_token}{\code{Auth0DeviceAuth$save_access_token()}}
+\item \href{#method-load_access_token}{\code{Auth0DeviceAuth$load_access_token()}}
+\item \href{#method-clear_access_token}{\code{Auth0DeviceAuth$clear_access_token()}}
 \item \href{#method-get_access_token_debug}{\code{Auth0DeviceAuth$get_access_token_debug()}}
 \item \href{#method-finalize}{\code{Auth0DeviceAuth$finalize()}}
 \item \href{#method-print}{\code{Auth0DeviceAuth$print()}}
@@ -113,6 +116,43 @@ get_access_token
 \subsection{Returns}{
 character access code
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-save_access_token"></a>}}
+\if{latex}{\out{\hypertarget{method-save_access_token}{}}}
+\subsection{Method \code{save_access_token()}}{
+save_access_token save access token to a file
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Auth0DeviceAuth$save_access_token(access_token)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{access_token}}{access token}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-load_access_token"></a>}}
+\if{latex}{\out{\hypertarget{method-load_access_token}{}}}
+\subsection{Method \code{load_access_token()}}{
+load_access_token load access token from a file
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Auth0DeviceAuth$load_access_token()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-clear_access_token"></a>}}
+\if{latex}{\out{\hypertarget{method-clear_access_token}{}}}
+\subsection{Method \code{clear_access_token()}}{
+clear access token
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Auth0DeviceAuth$clear_access_token()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-get_access_token_debug"></a>}}

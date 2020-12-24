@@ -24,7 +24,6 @@ response_json_to_data = function(
   data = fromJSON(content)
 }
 
-
 #' get_bucket_data
 #'
 #' @description
@@ -44,6 +43,19 @@ get_bucket_data = function(
   data_dir = gs_data_dir( bucket_name )
   read.table(file.path(data_dir, file_name), sep = '\t',header = TRUE)
 }
+
+#' get_version
+#'
+#' @description
+#' get_version, get version information
+#'
+#' @return character, version information
+#'
+#' @export
+get_version = function() {
+  CUBE_VERSION
+}
+
 
 #' get_metadata_query
 #'
