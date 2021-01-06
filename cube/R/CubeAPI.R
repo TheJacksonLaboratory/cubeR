@@ -196,11 +196,9 @@ CubeAPI <- R6::R6Class(
 
       parts <- str_split(uri, "/")[[1]]
       len <- length(parts)
-
-      # file name is last part
-      file_name <- parts[len]
-      # remove "?authuser=1" from file name if exist
-      file_name <- str_split(file_name, "\\?")[[1]][1]
+      if ( len < 1 ) {
+        return (list(bucket_name = "", file_name = ""))
+      }
 
       # concacenate bucket name
       start_index <- 4
@@ -208,6 +206,8 @@ CubeAPI <- R6::R6Class(
         start_index <- 5
       }
       bucket_name <- "gs://"
+
+
       for (i in start_index:len-1) {
         bucket_name = paste0(bucket_name, parts[i])
         if ( i < len-1 ) {
@@ -215,6 +215,18 @@ CubeAPI <- R6::R6Class(
         }
       }
       #bucket_name = paste0("gs://", parts[len-2], "/", parts[len-1])
+
+      # check last part if it is a file name, just by . for now
+      if ( grepl(".", parts[len], fixed=TRUE) ) {
+        # file name is last part
+        file_name <- parts[len]
+        # remove "?authuser=1" from file name if exist
+        file_name <- str_split(file_name, "\\?")[[1]][1]
+      } else {
+        file_name = ""
+        bucket_name = paste0(bucket_name, "/", parts[len])
+      }
+
       list(bucket_name = bucket_name, file_name = file_name)
     },
 
