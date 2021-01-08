@@ -165,9 +165,11 @@ CubeAPI <- R6::R6Class(
         result <- results[[i]]
         if (exists('property_values', where=result)) {
           uri <- Filter(
-            function(x) startsWith(x$property_value, 'http')
-                || startsWith(x$property_value, 'gs') ,
+            function(x) !is.empty(x$property_value) && (startsWith(x$property_value, 'http')
+                || startsWith(x$property_value, 'gs')) ,
             result$property_values)
+
+          #log_info("Accession_id: {result$accession_id}, url: {result$property_values}")
           if (length(uri) > 0) {
             value = uri[[1]]$property_value
             bucket_file <- self$parse_uri(value)
@@ -176,6 +178,8 @@ CubeAPI <- R6::R6Class(
                               bucket_name = bucket_file$bucket_name,
                               file_name = bucket_file$file_name)
             index <- index + 1
+          } else {
+            log_info("Accession_id: {result$accession_id}, url: {uri}")
           }
         }
       }
